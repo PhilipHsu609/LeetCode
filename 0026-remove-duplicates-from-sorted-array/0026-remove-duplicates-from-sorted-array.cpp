@@ -3,20 +3,27 @@ public:
     int removeDuplicates(vector<int>& nums) {
         int n = nums.size();
         int insert = 0;
-        unordered_set<int> seen;
 
-        for(int i = 0; i < n; i++) {
-            if(seen.find(nums[i]) == seen.end()) {
-                nums[insert] = nums[i];
-                insert++;
-                seen.insert(nums[i]);
+        if(n == 1) {
+            return 1;
+        }
+
+        int i = 0;
+        while(i < n) {
+            nums[insert] = nums[i];
+            insert++;
+            i++;
+
+            while(i > 0 && i < n && nums[i - 1] == nums[i]) {
+                i++;
             }
         }
 
-        for(int i = 0; i < n - seen.size(); i++) {
+        while(n > insert) {
             nums.pop_back();
+            n--;
         }
 
-        return seen.size();
+        return insert;
     }
 };
