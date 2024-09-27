@@ -4,10 +4,6 @@ public:
         int n = nums.size();
         int insert = 0;
 
-        if(n == 1) {
-            return 1;
-        }
-
         int i = 0;
         while(i < n) {
             nums[insert] = nums[i];
