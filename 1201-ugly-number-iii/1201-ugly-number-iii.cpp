@@ -5,6 +5,8 @@ public:
 
         while(l < r) {
             int mid = l + (r - l) / 2;
+            // we search for a range [1, mid] such that
+            // mid is the nth number that is divisible by a, b, or c.
 
             if(count(mid, a, b, c) < n) {
                 l = mid + 1;
@@ -17,7 +19,7 @@ public:
     }
 
     int count(long long m, long long a, long long b, long long c) {
-        return m/a + m/b + m/c - m/lcm(a, b) - m/lcm(b, c) - m/lcm(a, c) - m/lcm(lcm(a, b), c);
+        return m/a + m/b + m/c - m/lcm(a, b) - m/lcm(b, c) - m/lcm(a, c) + m/lcm(lcm(a, b), c);
     }
 
     long long gcd(long long a, long long b) {
