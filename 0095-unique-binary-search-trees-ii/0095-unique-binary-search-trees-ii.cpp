@@ -12,18 +12,23 @@
 class Solution {
 public:
     vector<TreeNode*> generateTrees(int n) {
-        return gen(1, n);
+        map<pair<int, int>, vector<TreeNode*>> memo;
+        return gen(1, n, memo);
     }
 
-    vector<TreeNode*> gen(int start, int end) {
+    vector<TreeNode*> gen(int start, int end, map<pair<int, int>, vector<TreeNode*>> &memo) {
         if(start > end) {
             return {nullptr};
         }
 
+        if(memo.find({start, end}) != memo.end()) {
+            return memo[{start, end}];
+        }
+
         vector<TreeNode*> ret;
         for(int i = start; i <= end; i++) {
-            auto left = gen(start, i - 1);
-            auto right = gen(i + 1, end);
+            auto left = gen(start, i - 1, memo);
+            auto right = gen(i + 1, end, memo);
 
             for(auto *l : left) {
                 for(auto *r : right) {
@@ -32,6 +37,6 @@ public:
             }
         }
 
-        return ret;
+        return memo[{start, end}] = ret;
     }
 };
