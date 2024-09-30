@@ -14,12 +14,11 @@ public:
         while(!pq.empty()) {
             int n = pq.top(); pq.pop();
             ret = min(ret, n - mini);
+            mini = min(mini, n / 2);
 
             if(n % 2 == 1) {
                 break;
             }
-
-            mini = min(mini, n / 2);
             pq.push(n / 2);
         }
 
