@@ -1,7 +1,8 @@
 class Solution {
 public:
     vector<int> closestRoom(vector<vector<int>>& rooms, vector<vector<int>>& queries) {
-        int n = rooms.size(), k = queries.size();
+        int n = rooms.size();
+        int k = queries.size();
 
         for(int i = 0; i < k; i++) {
             queries[i].push_back(i);
@@ -15,34 +16,29 @@ public:
         sort(queries.begin(), queries.end(), cmp);
 
         int i = 0;
-        set<int> s; // room ids that satisfied the query
-        vector<int> ret(k);
+        set<int> ids;
+        vector<int> ret(k, -1);
         for(const auto &q : queries) {
             while(i < n && rooms[i][1] >= q[1]) {
-                s.insert(rooms[i][0]);
+                ids.insert(rooms[i][0]);
                 i++;
             }
 
-            auto it = s.lower_bound(q[0]);
             int dist = INT_MAX;
-            int id = -1;
-
-            if(it != s.end()) {
+            auto it = ids.lower_bound(q[0]);
+            if(it != ids.end()) {
                 if(*it - q[0] < dist) {
                     dist = *it - q[0];
-                    id = *it;
+                    ret[q[2]] = *it;
                 }
             }
 
-            if(it != s.begin()) {
+            if(it != ids.begin()) {
                 it = prev(it, 1);
-                if(abs(*it - q[0]) <= dist) {
-                    dist = abs(*it - q[0]);
-                    id = *it;
+                if(q[0] - *it <= dist) {
+                    ret[q[2]] = *it;
                 }
             }
-
-            ret[q[2]] = id;
         }
 
         return ret;
