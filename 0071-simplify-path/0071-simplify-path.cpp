@@ -1,38 +1,38 @@
 class Solution {
 public:
     string simplifyPath(string path) {
-        vector<string> sp;
-        int pos = 0;
-        if(path[path.length() - 1] != '/') path += '/';
-        for(int i = 1; i < path.length(); i++) {
-            if(path[i] == '/') {
-                string sub = path.substr(pos + 1, i - pos - 1);
-                if(sub != "" && sub != ".") {
-                    sp.push_back(sub);
-                    // cout << sub << endl;
-                }
-                pos = i;
-            }
-        }
-        
-        string ans = "";
         stack<string> s;
-        for(int i = 0; i < sp.size(); i++) {
-            if(sp[i] == "..") {
-                if(!s.empty())
-                    s.pop();
-            }else {
-                s.push(sp[i]);
+
+        int i = 0;
+        int n = path.length();
+        while(i + 1 < n) {
+            int j = i + 1;
+            while(j < n && path[j] != '/') {
+                j++;
             }
+
+            string name = path.substr(i + 1, j - i - 1);
+            if(name == "..") {
+                if(!s.empty()) {
+                    s.pop();
+                }
+            } else if(name == "." || name.empty()) {
+                i = j;
+                continue;
+            } else {
+                s.push(name);
+            }
+
+            i = j;
         }
-        
-        if(s.empty()) return "/";
-        
+
+
+        string ans;
         while(!s.empty()) {
             ans = "/" + s.top() + ans;
             s.pop();
         }
-        
-        return ans;
+
+        return ans.empty() ? "/" : ans;
     }
 };
