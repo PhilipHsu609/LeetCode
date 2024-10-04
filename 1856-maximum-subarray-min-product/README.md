@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/maximum-subarray-min-product/">1856. Maximum Subarray Min-Product</a></h2><h3>Medium</h3><hr><p>The <strong>min-product</strong> of an array is equal to the <strong>minimum value</strong> in the array <strong>multiplied by</strong> the array&#39;s <strong>sum</strong>.</p>
+<h2><a href="https://leetcode.com/problems/maximum-subarray-min-product">1856. Maximum Subarray Min-Product</a></h2><h3>Medium</h3><hr><p>The <strong>min-product</strong> of an array is equal to the <strong>minimum value</strong> in the array <strong>multiplied by</strong> the array&#39;s <strong>sum</strong>.</p>
 
 <ul>
 	<li>For example, the array <code>[3,2,5]</code> (minimum value is <code>2</code>) has a min-product of <code>2 * (3+2+5) = 2 * 10 = 20</code>.</li>
