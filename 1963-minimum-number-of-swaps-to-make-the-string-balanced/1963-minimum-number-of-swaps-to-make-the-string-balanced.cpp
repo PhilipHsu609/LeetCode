@@ -1,22 +1,20 @@
 class Solution {
 public:
     int minSwaps(string s) {
-        int n = s.size();
-        int balance = 0, swaps = 0, j = n - 1;
-        for (int i = 0; i < n; i++) {
-            if (s[i] == '[')
-                balance++;
-            else
-                balance--;
+        int imbalance = 0;
 
-            if (balance < 0) {
-                while (i < j && s[j] != '[')
-                    j--;
-                swap(s[i], s[j]);
-                swaps++;
-                balance = 1;
+        for(char c : s) {
+            if(c == ']') {
+                if(imbalance == 0) {
+                    imbalance++;
+                } else {
+                    imbalance--;
+                }
+            } else {
+                imbalance++;
             }
         }
-        return swaps;
+
+        return (imbalance + 1) / 2;
     }
 };
