@@ -9,12 +9,12 @@ public:
         long long sum = 0;
         for(int i = 0; i < n; i++) {
             // check nums[i] is in top or bot
-            long long f = freq[nums[i]];
+            int f = freq[nums[i]];
             int v = nums[i];
             if(f > 0) {
                 if(top.find({f, v}) != top.end()) {
                     top.erase({f, v});
-                    sum -= f * v;
+                    sum -= static_cast<long long>(f) * v;
                 } else {
                     bot.erase({f, v});
                 }
@@ -23,13 +23,13 @@ public:
             // add nums[i] to top
             freq[nums[i]]++;
             top.insert({f + 1, v});
-            sum += (f + 1) * v;
+            sum += static_cast<long long>(f + 1) * v;
 
             // fix top if more than x element
             if(top.size() > x) {
                 // move the least frequent in top to bot
                 auto it = top.begin();
-                sum -= (*it)[0] * (*it)[1];
+                sum -= static_cast<long long>((*it)[0]) * (*it)[1];
                 bot.insert({(*it)[0], (*it)[1]});
                 top.erase(it);
             }
@@ -41,7 +41,7 @@ public:
                 v = nums[i - k];
                 if(top.find({f, v}) != top.end()) {
                     top.erase({f, v});
-                    sum -= f * v;
+                    sum -= static_cast<long long>(f) * v;
                 } else {
                     bot.erase({f, v});
                 }
@@ -54,7 +54,7 @@ public:
 
                 if(top.size() < x && !bot.empty()) {
                     auto it = prev(bot.end(), 1);
-                    sum += (*it)[0] * (*it)[1];
+                    sum += static_cast<long long>((*it)[0]) * (*it)[1];
                     top.insert({(*it)[0], (*it)[1]});
                     bot.erase(it);
                 }
