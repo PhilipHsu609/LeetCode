@@ -1,43 +1,39 @@
 class Solution {
 public:
-    vector<vector<int>> memo;
-
     int maxMoves(vector<vector<int>>& grid) {
         int m = grid.size(), n = grid[0].size();
-        memo.resize(m, vector<int>(n, -1));
+
+        vector<vector<int>> dp(m, vector<int>(n));
+
+        for(int i = 0; i < m; i++) {
+            dp[i][0] = 1;
+        }
 
         int ret = 0;
-        for(int i = 0; i < m; i++) {
-            ret = max(ret, dfs(grid, i, 0));
+        for(int j = 1; j < n; j++) {
+            bool stop = true;
+            for(int i = 0; i < m; i++) {
+                if(i > 0 && dp[i - 1][j - 1] > 0 && grid[i][j] > grid[i - 1][j - 1]) {
+                    dp[i][j] = max(dp[i][j], dp[i - 1][j - 1] + 1);
+                    stop = false;
+                }
+                if(dp[i][j - 1] > 0 && grid[i][j] > grid[i][j - 1]) {
+                    dp[i][j] = max(dp[i][j], dp[i][j - 1] + 1);
+                    stop = false;
+                }
+                if(i < m - 1 && dp[i + 1][j - 1] > 0 && grid[i][j] > grid[i + 1][j - 1]) {
+                    dp[i][j] = max(dp[i][j], dp[i + 1][j - 1] + 1);
+                    stop = false;
+                }
+
+                ret = max(ret, dp[i][j] - 1);
+            }
+
+            if(stop) {
+                break;
+            }
         }
 
         return ret;
-    }
-
-    int dfs(vector<vector<int>> &grid, int i, int j) {
-        int m = grid.size(), n = grid[0].size();
-
-        if(j == n - 1) {
-            return 0;
-        }
-
-        if(memo[i][j] != -1) {
-            return memo[i][j];
-        }
-
-        int ret = 0;
-        if(i > 0 && grid[i][j] < grid[i - 1][j + 1]) {
-            ret = max(ret, dfs(grid, i - 1, j + 1) + 1);
-        }
-
-        if(grid[i][j] < grid[i][j + 1]) {
-            ret = max(ret, dfs(grid, i, j + 1) + 1);
-        }
-
-        if(i < m - 1 && grid[i][j] < grid[i + 1][j + 1]) {
-            ret = max(ret, dfs(grid, i + 1, j + 1) + 1);
-        }
-
-        return memo[i][j] = ret;
     }
 };
