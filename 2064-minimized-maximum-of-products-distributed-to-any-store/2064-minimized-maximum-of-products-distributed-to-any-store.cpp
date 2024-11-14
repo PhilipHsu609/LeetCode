@@ -1,9 +1,7 @@
 class Solution {
 public:
     int minimizedMaximum(int n, vector<int>& quantities) {
-        sort(begin(quantities), end(quantities));
-
-        int l = 1, r = quantities.back();
+        int l = 1, r = *max_element(begin(quantities), end(quantities));
         while(l < r) {
             int mid = l + (r - l) / 2;
 
