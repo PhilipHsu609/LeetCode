@@ -9,11 +9,11 @@ public:
         }
 
         int ans = 0;
-        function<int(int, int)> dfs = [&](int x, int p) -> int {
+        auto dfs = [&](auto dfs, int x, int p) -> int {
             int val = values[x];
             for(auto u : adj[x]) {
                 if(u != p) {
-                    val = (val + dfs(u, x)) % k;
+                    val = (val + dfs(dfs, u, x)) % k;
                 }
             }
             if(val % k == 0) {
@@ -24,7 +24,7 @@ public:
             return val;
         };
 
-        dfs(0, -1);
+        dfs(dfs, 0, -1);
         return ans;
     }
 };
