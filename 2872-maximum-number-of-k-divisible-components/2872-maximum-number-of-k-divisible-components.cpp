@@ -13,7 +13,7 @@ public:
             int val = values[x];
             for(auto u : adj[x]) {
                 if(u != p) {
-                    val += dfs(u, x);
+                    val = (val + dfs(u, x)) % k;
                 }
             }
             if(val % k == 0) {
