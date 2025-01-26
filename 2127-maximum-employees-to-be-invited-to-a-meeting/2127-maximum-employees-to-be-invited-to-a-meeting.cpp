@@ -3,6 +3,7 @@ public:
     int maximumInvitations(vector<int>& favorite) {
         int n = favorite.size();
 
+        // Build graph for the chains
         vector<vector<int>> adj(n);
         for(int i = 0; i < n; i++) {
             if(favorite[favorite[i]] != i) {
@@ -10,6 +11,7 @@ public:
             }
         }
 
+        // For every mutual favorite pair, sum the chains that connected to them
         int ret = 0;
         vector<bool> visited(n);
         for(int i = 0; i < n; i++) {
@@ -18,7 +20,7 @@ public:
             }
         }
 
-        // Check for loops
+        // Check for loops, if the length of the loop is greater than ret, then it's the answer
         for(int i = 0; i < n; i++) {
             int cnt = 0;
             int j = i;
