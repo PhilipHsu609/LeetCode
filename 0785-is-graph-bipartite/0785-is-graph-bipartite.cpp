@@ -14,24 +14,27 @@ public:
         }
 
         // Use BFS to check if the graph is two-colorable
-        queue<array<int, 2>> q;
+        queue<int> q;
         vector<int> color(n, -1); // 0, 1
 
-        q.push({0, 0});
-
-        while(!q.empty()) {
-            auto [u, c] = q.front(); q.pop();
-
-            if(color[u] != -1) {
-                if(color[u] != c) {
-                    return false;
-                }
+        for(int s = 0; s < n; s++) {
+            if(color[s] != -1) {
                 continue;
             }
 
-            color[u] = c;
-            for(int v : adj[u]) {
-                q.push({v, c == 0 ? 1 : 0});
+            q.push(s);
+            color[s] = 0;
+
+            while(!q.empty()) {
+                int u = q.front(); q.pop();
+                for(int v : adj[u]) {
+                    if(color[v] == -1) {
+                        color[v] = color[u] ^ 1;
+                        q.push(v);
+                    } else if(color[v] == color[u]) {
+                        return false;
+                    }
+                }
             }
         }
 
