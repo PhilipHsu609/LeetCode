@@ -1,114 +1,93 @@
 class Solution {
 public:
-    // Main function to calculate the maximum number of magnificent sets
-    int magnificentSets(int n, vector<vector<int>> &edges) {
-        vector<vector<int>> adjList(n);
-        for (auto edge : edges) {
-            // Transition to 0-index
-            adjList[edge[0] - 1].push_back(edge[1] - 1);
-            adjList[edge[1] - 1].push_back(edge[0] - 1);
+    int magnificentSets(int n, vector<vector<int>>& edges) {
+        vector<vector<int>> adj(n);
+
+        for(const auto &e : edges) {
+            adj[e[0] - 1].push_back(e[1] - 1);
+            adj[e[1] - 1].push_back(e[0] - 1);
         }
 
-        vector<int> colors(n, -1);
-        for (int node = 0; node < n; node++) {
-            if (colors[node] != -1) continue;
-            // Start coloring from uncolored nodes
-            colors[node] = 0;
-            // If the graph is not bipartite, return -1
-            if (!isBipartite(adjList, node, colors)) return -1;
-        }
+        vector<int> color(n, -1);
+        queue<int> q;
 
-        // Calculate the longest shortest path for each node
-        vector<int> distances(n);
-        for (int node = 0; node < n; node++) {
-            distances[node] = getLongestShortestPath(adjList, node, n);
-        }
+        for(int s = 0; s < n; s++) {
+            if(color[s] != -1) {
+                continue;
+            }
 
-        // Calculate the total maximum number of groups across all components
-        int maxNumberOfGroups = 0;
-        vector<bool> visited(n, false);
-        for (int node = 0; node < n; node++) {
-            if (visited[node]) continue;
-            // Add the number of groups for this component to the total
-            maxNumberOfGroups += getNumberOfGroupsForComponent(
-                adjList, node, distances, visited);
-        }
+            q.push(s);
+            color[s] = 0;
 
-        return maxNumberOfGroups;
-    }
+            while(!q.empty()) {
+                int u = q.front(); q.pop();
 
-private:
-    // Checks if the graph is bipartite starting from the given node
-    bool isBipartite(vector<vector<int>> &adjList, int node,
-                     vector<int> &colors) {
-        for (int neighbor : adjList[node]) {
-            // If a neighbor has the same color as the current node, the graph
-            // is not bipartite
-            if (colors[neighbor] == colors[node]) return false;
-
-            // If the neighbor is already colored, skip it
-            if (colors[neighbor] != -1) continue;
-
-            // Assign the opposite color to the neighbor
-            colors[neighbor] = (colors[node] + 1) % 2;
-
-            // Recursively check bipartiteness for the neighbor; return false if
-            // it fails
-            if (!isBipartite(adjList, neighbor, colors)) return false;
-        }
-        // If all neighbors are properly colored, return true
-        return true;
-    }
-
-    // Computes the longest shortest path (height) in the graph starting from
-    // the source node
-    int getLongestShortestPath(vector<vector<int>> &adjList, int srcNode,
-                               int n) {
-        // Initialize a queue for BFS and a visited array
-        queue<int> nodesQueue;
-        vector<bool> visited(n, false);
-
-        nodesQueue.push(srcNode);
-        visited[srcNode] = true;
-        int distance = 0;
-
-        // Perform BFS layer by layer
-        while (!nodesQueue.empty()) {
-            // Process all nodes in the current layer
-            int numOfNodesInLayer = nodesQueue.size();
-            for (int i = 0; i < numOfNodesInLayer; i++) {
-                int currentNode = nodesQueue.front();
-                nodesQueue.pop();
-
-                // Visit all unvisited neighbors of the current node
-                for (int neighbor : adjList[currentNode]) {
-                    if (visited[neighbor]) continue;
-                    visited[neighbor] = true;
-                    nodesQueue.push(neighbor);
+                for(int v : adj[u]) {
+                    if(color[v] == -1) {
+                        color[v] = color[u] ^ 1;
+                        q.push(v);
+                    } else if(color[v] == color[u]) {
+                        // The graph is not a bipartite, the valid splits do not exist
+                        return -1;
+                    }
                 }
             }
-            // Increment the distance for each layer
-            distance++;
         }
-        // Return the total distance (longest shortest path)
-        return distance;
+
+        vector<int> dist(n);
+        for(int i = 0; i < n; i++) {
+            dist[i] = lsdist(adj, i);
+        }
+
+        int ret = 0;
+        vector<bool> visited(n);
+        for(int i = 0; i < n; i++) {
+            if(visited[i]) {
+                continue;
+            }
+
+            ret += getGroup(adj, i, dist, visited);
+        }
+
+        return ret;
     }
 
-    // Calculates the maximum number of groups for a connected component
-    int getNumberOfGroupsForComponent(vector<vector<int>> &adjList, int node,
-                                      vector<int> &distances,
-                                      vector<bool> &visited) {
-        // Start with the distance of the current node as the maximum
-        int maxNumberOfGroups = distances[node];
-        visited[node] = true;
+    // Longest shortest distance
+    int lsdist(const vector<vector<int>> &adj, int s) {
+        int n = adj.size();
+        int ret = 0;
+        vector<bool> visited(n);
+        queue<int> q;
 
-        // Recursively calculate the maximum for all unvisited neighbors
-        for (int neighbor : adjList[node]) {
-            if (visited[neighbor]) continue;
-            maxNumberOfGroups = max(maxNumberOfGroups,
-                                    getNumberOfGroupsForComponent(
-                                        adjList, neighbor, distances, visited));
+        q.push(s);
+        visited[s] = true;
+
+        while(!q.empty()) {
+            for(int i = q.size(); i > 0; i--) {
+                int u = q.front(); q.pop();
+                for(int v : adj[u]) {
+                    if(!visited[v]) {
+                        visited[v] = true;
+                        q.push(v);
+                    }
+                }
+            }
+            ret++;
         }
-        return maxNumberOfGroups;
+
+        return ret;
+    }
+
+    int getGroup(const vector<vector<int>> &adj, int s, const vector<int> &dist, vector<bool> &visited) {
+        int ret = dist[s];
+        visited[s] = true;
+        
+        for(int v : adj[s]) {
+            if(!visited[v]) {
+                ret = max(ret, getGroup(adj, v, dist, visited));
+            }
+        }
+
+        return ret;
     }
 };
