@@ -1,56 +1,88 @@
+class DSU {
+public:
+    DSU(int n) {
+        p.resize(n);
+        s.resize(n, 1);
+        iota(begin(p), end(p), 0);
+    }
+
+    int find(int x) {
+        if(x != p[x]) {
+            p[x] = find(p[x]);
+        }
+        return p[x];
+    }
+
+    void join(int x, int y) {
+        int px = find(x);
+        int py = find(y);
+
+        if(px != py) {
+            p[py] = px;
+            s[px] += s[py];
+        }
+    }
+    vector<int> p, s;
+};
+
 class Solution {
 public:
-int N;
     int largestIsland(vector<vector<int>>& grid) {
-        N = grid.size();
-        //DFS every island and give it an index of island
-        int index = 2, res = 0;
-        unordered_map <int, int>area;
-        for (int x = 0; x < N; ++x) {
-            for (int y = 0; y < N; ++y) {
-                if (grid[x][y] == 1) {
-                    area[index] = dfs(grid, x, y, index);
-                    res = max(res, area[index++]);
+        int n = grid.size();
+        int ret = 0;
+        DSU dsu(n * n);
+
+        auto idx = [n](int i, int j) {
+            return i * n + j;
+        };
+
+        for(int i = 0; i < n; i++) {
+            for(int j = 0; j < n; j++) {
+                if(grid[i][j] != 1) {
+                    continue;
                 }
+
+                if(i > 0 && grid[i - 1][j] == 1) {
+                    dsu.join(idx(i, j), idx(i - 1, j));
+                }
+
+                if(j > 0 && grid[i][j - 1] == 1 && dsu.find(idx(i, j)) != dsu.find(idx(i, j - 1))) {
+                    dsu.join(idx(i, j), idx(i, j - 1));
+                }
+
+                ret = max(ret, dsu.s[dsu.find(idx(i, j))]);
             }
         }
-        //traverse every 0 cell and count biggest island it can conntect
-        for (int x = 0; x < N; ++x)
-            for (int y = 0; y < N; ++y)
-                if (grid[x][y] == 0) {
-                    unordered_set<int> seen = {};
-                    int cur = 1;
-                    for (auto p : move(x, y)) {
-                        index = grid[p.first][p.second];
-                        if (index > 1 && seen.count(index) == 0) {
-                            seen.insert(index);
-                            cur += area[index];
-                        }
-                    }
-                    res = max(res, cur);
+
+        for(int i = 0; i < n; i++) {
+            for(int j = 0; j < n; j++) {
+                if(grid[i][j] != 0) {
+                    continue;
                 }
-        return res;
-    }
 
-    vector<pair<int, int>> move(int x, int y) {
-        vector<pair<int, int>> res;
-        for (auto p : vector<vector<int>> {{1, 0}, { -1, 0}, {0, 1}, {0, -1}}) {
-            if (valid(x + p[0], y + p[1]))
-                res.push_back(make_pair(x + p[0], y + p[1]));
+                unordered_set<int> ng;
+                if(i > 0 && grid[i - 1][j] == 1) {
+                    ng.insert(dsu.find(idx(i - 1, j)));
+                }
+                if(i < n - 1 && grid[i + 1][j] == 1) {
+                    ng.insert(dsu.find(idx(i + 1, j)));
+                }
+                if(j > 0 && grid[i][j - 1] == 1) {
+                    ng.insert(dsu.find(idx(i, j - 1)));
+                }
+                if(j < n - 1 && grid[i][j + 1] == 1) {
+                    ng.insert(dsu.find(idx(i, j + 1)));
+                }
+
+                int ts = 1;
+                for(int g : ng) {
+                    ts += dsu.s[g];
+                }
+
+                ret = max(ret, ts);
+            }
         }
-        return res;
-    }
 
-    int valid(int x, int y) {
-        return 0 <= x && x < N && 0 <= y && y < N;
-    }
-
-    int dfs(vector<vector<int>>& grid, int x, int y, int index) {
-        int area = 0;
-        grid[x][y] = index;
-        for (auto p : move(x, y))
-            if (grid[p.first][p.second] == 1)
-                area += dfs(grid, p.first, p.second, index);
-        return area + 1;
+        return ret;
     }
 };
