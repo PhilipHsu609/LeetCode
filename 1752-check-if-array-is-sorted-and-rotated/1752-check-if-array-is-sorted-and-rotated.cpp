@@ -2,27 +2,14 @@ class Solution {
 public:
     bool check(vector<int>& nums) {
         int n = nums.size();
-        int i = 1;
+        int dec = 0;
 
-        while(i < n) {
-            if(nums[i - 1] > nums[i]) {
-                break;
-            }
-            i++;
-        }
-
-        if(i == n) {
-            return true;
-        }
-
-        i++;
-        while(i < n) {
-            if(nums[i - 1] > nums[i]) {
+        for(int i = 0; i < n; i++) {
+            if(nums[i] > nums[(i + 1) % n] && ++dec > 1) {
                 return false;
             }
-            i++;
         }
 
-        return nums.front() >= nums.back();
+        return true;
     }
 };
