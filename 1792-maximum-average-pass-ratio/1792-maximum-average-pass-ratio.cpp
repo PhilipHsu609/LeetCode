@@ -1,32 +1,35 @@
 class Solution {
-    using AD3 = array<double, 3>;
 public:
     double maxAverageRatio(vector<vector<int>>& classes, int extraStudents) {
-        priority_queue<AD3> pq;
-
         int n = classes.size();
+
+        auto cmp = [](const array<int, 2> &a, const array<int, 2> &b) {
+            double r1 = (a[1] * (a[0] + 1) - a[0] * (a[1] + 1)) / static_cast<double>(a[1] * (a[1] + 1));
+            double r2 = (b[1] * (b[0] + 1) - b[0] * (b[1] + 1)) / static_cast<double>(b[1] * (b[1] + 1));
+            return r1 < r2;
+        };
+        priority_queue<array<int, 2>, vector<array<int, 2>>, decltype(cmp)> pq(cmp);
+
+        double ratioSum = 0.0;
         for(const auto &c : classes) {
-            double p = c[0], t = c[1];
-            pq.push({(p + 1) / (t + 1) - p / t, p, t});
+            double ratio = c[0] / static_cast<double>(c[1]);
+            ratioSum += ratio;
+            pq.push({c[0], c[1]});
         }
 
-        for(int i = 0; i < extraStudents; i++) {
-            auto [dr, p, t] = pq.top();
+        for(int i = 1; i <= extraStudents; i++) {
+            auto [nu, de] = pq.top();
             pq.pop();
 
-            p += 1.0;
-            t += 1.0;
+            ratioSum -= nu / static_cast<double>(de);
+            ratioSum += (nu + 1) / static_cast<double>(de + 1);
 
-            pq.push({(p + 1) / (t + 1) - p / t, p, t});
+            pq.push({nu + 1, de + 1});
         }
 
-        double avg = 0;
-        while(!pq.empty()) {
-            auto [dr, p, t] = pq.top();
-            pq.pop();
-            avg += p / t;
-        }
-
-        return avg / n;
+        return ratioSum / n;
     }
 };
+/*
+(n+1)/(d+1) - (n/d) = d(n+1)-n(d+1) / d(d+1)
+*/
