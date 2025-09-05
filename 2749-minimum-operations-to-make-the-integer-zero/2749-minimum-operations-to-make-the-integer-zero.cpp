@@ -21,11 +21,13 @@ num1 - (\sum_{i=1}^{k} {2^{p_i} + num2}) = 0
 
 \implies num1 - k * num2 = \sum_{i=1}^{k} 2^{p_i} > 0
 
+k can be at least bit_count(num1 - k * num2)
+k can be at most (num1 - k * num2), why? 2^0 * (num1 - k * num2)
+
 ---
 
-find a k such that (num1 - k * num2) has the fewest one-bit
+find a k such that (num1 - k * num2) satisfy the boundary:
 
-3 - 1 * -2 = 5
-3 - 2 * -2 = 7
+bit_count(num1 - k * num2) <= k <= num1 - k * num2
 
 */
