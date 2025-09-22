@@ -3,17 +3,18 @@ public:
     int maxFrequencyElements(vector<int>& nums) {
         unordered_map<int, int> freq;
         int maxFreq = 0;
+        int cnt = 0;
+
         for(int n : nums) {
             freq[n]++;
-            maxFreq = max(maxFreq, freq[n]);
-        }
-
-        int ret = 0;
-        for(auto [k, v] : freq) {
-            if(v == maxFreq) {
-                ret += v;
+            if(freq[n] == maxFreq) {
+                cnt++;
+            } else if(freq[n] > maxFreq) {
+                maxFreq = freq[n];
+                cnt = 1;
             }
         }
-        return ret;
+
+        return cnt * maxFreq;
     }
 };
