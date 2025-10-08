@@ -7,11 +7,7 @@ public:
         vector<int> ret;
 
         for(int spell : spells) {
-            long long need = ceil(success / static_cast<double>(spell));
-            if(need > 1e5) {
-                ret.push_back(0);
-                continue;
-            }
+            long long need = (success + spell - 1) / spell;
             auto it = lower_bound(potions.begin(), potions.end(), need);
             ret.push_back(distance(it, potions.end()));
         }
