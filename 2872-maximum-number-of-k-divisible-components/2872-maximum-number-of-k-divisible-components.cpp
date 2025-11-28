@@ -15,19 +15,17 @@ public:
                     continue;
                 }
                 int vsum = dfs(v, cur, com);
-
-                if(vsum % k == 0) {
-                    com++;
-                } else {
-                    sum = (sum + vsum) % k;
-                }
+                sum = (sum + vsum) % k;
+            }
+            if(sum % k == 0) {
+                com++;
+                return 0;
             }
             return sum;
         };
 
         int ret = 0;
-        int sum = dfs(0, -1, ret);
-        ret += static_cast<int>(sum % k == 0);
+        dfs(0, -1, ret);
 
         return ret;
     }
