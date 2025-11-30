@@ -2,30 +2,26 @@ class Solution {
 public:
     int minSubarray(vector<int>& nums, int p) {
         int n = nums.size();
-        int sum = 0;
+        int target = accumulate(nums.begin(), nums.end(), 0LL) % p;
 
-        for(int num : nums) {
-            sum = (sum + num) % p;
-        }
-
-        if(sum == 0) {
+        if(target == 0) {
             return 0;
         }
 
-        int psum = 0, ret = n;
-        unordered_map<int, int> m; // psum mod p -> index
+        unordered_map<int, int> m;
         m[0] = -1;
 
+        int ret = n;
+        int cur = 0;
         for(int i = 0; i < n; i++) {
-            psum += nums[i];
-            psum %= p;
+            cur = (cur + nums[i]) % p;
 
-            int x = (psum - sum + p) % p;
-            if(m.find(x) != m.end()) {
-                ret = min(ret, i - m[x]);
+            int check = (cur - target + p) % p;
+            if(m.find(check) != m.end()) {
+                ret = min(ret, i - m[check]);
             }
 
-            m[psum] = i;
+            m[cur] = i;
         }
 
         return ret == n ? -1 : ret;
