@@ -5,10 +5,7 @@ public:
         long long ret = 0;
         vector<vector<vector<long long>>> dp(n, vector<vector<long long>>(k + 1, vector<long long>(3, INT_MIN)));
 
-        for(int j = 0; j <= k; ++j) {
-            dp[0][j][0] = 0;
-        }
-
+        dp[0][0][0] = 0;
         dp[0][1][1] = -prices[0];
         dp[0][1][2] = prices[0];
 
