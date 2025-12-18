@@ -2,23 +2,16 @@ class Solution {
 public:
     void sortColors(vector<int>& nums) {
         int n = nums.size();
-        int r = 0, w = 0, b = n - 1;
-
-/*
-    r: the available position for red (nums[0:r] are red)
-    w: unclassified (nums[r:w] are white)
-    b: the available position for blue (nums[w:] are blue)
-*/
-
-        while(w <= b) {
-            if(nums[w] == 0) {
-                swap(nums[r], nums[w]);
-                r++, w++; // we swap an element into nums[0:r], so both r and w must increase
-            } else if(nums[w] == 1) {
-                w++;
+        int i = 0, j = 0, k = n - 1;
+        while(j <= k) {
+            if(nums[j] == 0) {
+                swap(nums[i], nums[j]);
+                ++i, ++j;
+            } else if(nums[j] == 1) {
+                ++j;
             } else {
-                swap(nums[w], nums[b]);
-                b--;
+                swap(nums[j], nums[k]);
+                --k;
             }
         }
     }
