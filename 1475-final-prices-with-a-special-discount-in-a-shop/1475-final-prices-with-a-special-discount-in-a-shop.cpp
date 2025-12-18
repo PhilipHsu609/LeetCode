@@ -2,15 +2,21 @@ class Solution {
 public:
     vector<int> finalPrices(vector<int>& prices) {
         int n = prices.size();
-        vector<int> ret(prices);
-
+        vector<int> ret(n);
         stack<int> s;
-        for(int i = 0; i < n; i++) {
-            while(!s.empty() && prices[s.top()] >= prices[i]) {
-                ret[s.top()] = prices[s.top()] - prices[i];
+
+        for(int i = n - 1; i >= 0; --i) {
+            while(!s.empty() && prices[i] < s.top()) {
                 s.pop();
             }
-            s.push(i);
+
+            if(s.empty()) {
+                ret[i] = prices[i];
+            } else {
+                ret[i] = prices[i] - s.top();
+            }
+
+            s.push(prices[i]);
         }
 
         return ret;
