@@ -4,34 +4,36 @@ public:
         int MOD = 1e9 + 7;
         vector<vector<array<int, 2>>> adj(n);
 
-        for(const auto &e : roads) {
-            adj[e[0]].push_back({e[1], e[2]});
-            adj[e[1]].push_back({e[0], e[2]});
+        for(const auto &r : roads) {
+            adj[r[0]].push_back({r[1], r[2]});
+            adj[r[1]].push_back({r[0], r[2]});
         }
 
-        vector<long long> dist(n, LLONG_MAX);
-        vector<long long> ways(n);
-
-        ways[0] = 1;
-        dist[0] = 0;
-
         priority_queue<array<long long, 2>, vector<array<long long, 2>>, greater<array<long long, 2>>> pq;
+
+        vector<long long> time(n, LLONG_MAX);
+        vector<int> ways(n);
+
         pq.push({0, 0});
+        ways[0] = 1;
+        time[0] = 0;
 
         while(!pq.empty()) {
-            auto [d, u] = pq.top(); pq.pop();
+            auto [t, u] = pq.top();
+            pq.pop();
 
-            if(d > dist[u]) {
+            if(t > time[u]) {
                 continue;
             }
 
             for(auto [v, w] : adj[u]) {
-                if(dist[v] > d + w) {
-                    dist[v] = d + w;
+                if(t + w < time[v]) {
+                    time[v] = t + w;
                     ways[v] = ways[u];
-                    pq.push({dist[v], v});
-                } else if(dist[v] == d + w) {
-                    ways[v] = (ways[v] + ways[u]) % MOD;
+                    pq.push({t + w, v});
+                } else if(t + w == time[v]) {
+                    ways[v] += ways[u];
+                    ways[v] %= MOD;
                 }
             }
         }
