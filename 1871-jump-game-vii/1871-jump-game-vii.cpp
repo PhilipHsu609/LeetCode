@@ -1,8 +1,12 @@
 class Solution {
 public:
     bool canReach(string s, int minJump, int maxJump) {
+        if(s.back() == '1') {
+            return false;
+        }
+
         int n = s.length();
-        vector<int> diffdp(n + maxJump + 2);
+        vector<int> diffdp(n + 1);
         diffdp[minJump] += 1;
         diffdp[maxJump + 1] -= 1; 
 
@@ -14,10 +18,13 @@ public:
                 continue;
             }
 
+            if(i + minJump < n + 1)
             diffdp[i + minJump] += 1;
+
+            if(i + maxJump + 1 < n + 1)
             diffdp[i + maxJump + 1] -= 1;
         }
 
-        return jump > 0 && s.back() == '0';
+        return jump > 0;
     }
 };
