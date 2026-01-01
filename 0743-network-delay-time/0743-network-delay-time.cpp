@@ -1,7 +1,7 @@
 class Solution {
 public:
     int networkDelayTime(vector<vector<int>>& times, int n, int k) {
-        unordered_map<int, vector<array<int, 2>>> adj;
+        vector<vector<array<int, 2>>> adj(n);
 
         for(const auto &t : times) {
             adj[t[0] - 1].push_back({t[1] - 1, t[2]});
@@ -16,6 +16,10 @@ public:
         while(!pq.empty()) {
             auto [t, u] = pq.top();
             pq.pop();
+
+            if(t > dist[u]) {
+                continue;
+            }
 
             for(auto [v, w] : adj[u]) {
                 if(t + w < dist[v]) {
