@@ -6,14 +6,20 @@ public:
         int mini = INT_MAX;
         int neg = 0;
 
-        for(int i = 0; i < n; i++) {
-            for(int j = 0; j < n; j++) {
-                neg += static_cast<int>(matrix[i][j] < 0);
-                mini = min(mini, abs(matrix[i][j]));
-                ret += abs(matrix[i][j]);
+        for(auto &row : matrix) {
+            for(auto ele : row) {
+                if(ele < 0) {
+                    ++neg;
+                }
+                ret += abs(ele);
+                mini = min(mini, abs(ele));
             }
         }
 
-        return neg % 2 == 0 ? ret : ret - 2 * mini;
+        if(neg % 2 == 1) {
+            ret -= 2 * mini;
+        }
+
+        return ret;
     }
 };
