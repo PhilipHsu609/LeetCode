@@ -2,8 +2,8 @@ class Solution {
 public:
     string longestDiverseString(int a, int b, int c) {
         string ret;
-        priority_queue<pair<int, char>> pq;
 
+        priority_queue<pair<int, char>> pq;
         if(a > 0)
             pq.push({a, 'a'});
         if(b > 0)
@@ -11,26 +11,31 @@ public:
         if(c > 0)
             pq.push({c, 'c'});
 
-        int n = a + b + c;
-        for(int i = 0; i < n; i++) {
-            if(pq.empty()) {
-                break;
-            }
+        while(!pq.empty()) {
+            auto [cnt, ch] = pq.top();
+            pq.pop();
 
-            auto [f1, c1] = pq.top(); pq.pop();
-            if(i > 1 && c1 == ret[i - 1] && c1 == ret[i - 2]) {
+            int n = ret.size();
+            if(n > 1 && ret[n - 2] == ch && ret[n - 1] == ch) {
+                // cannot use ch
                 if(pq.empty()) {
                     break;
                 }
-                auto [f2, c2] = pq.top(); pq.pop();
-                ret += c2;
-                if(f2 > 1)
-                    pq.push({f2 - 1, c2});
-                pq.push({f1, c1});
+                // use the 2nd most instead
+                auto [cnt2, ch2] = pq.top();
+                pq.pop();
+
+                ret.push_back(ch2);
+                if(--cnt2 > 0) {
+                    pq.push({cnt2, ch2});
+                }
             } else {
-                ret += c1;
-                if(f1 > 1)
-                    pq.push({f1 - 1, c1});
+                ret.push_back(ch);
+                --cnt;
+            }
+
+            if(cnt > 0) {
+                pq.push({cnt, ch});
             }
         }
 
