@@ -1,44 +1,37 @@
 class Solution {
 public:
     vector<int> majorityElement(vector<int>& nums) {
-        int cand[2] = {0};
-        int cnt[2] = {0};
-
+        int cand1 = 0, cand2 = 0, cnt1 = 0, cnt2 = 0;
         for(int n : nums) {
-            if(cnt[0] == 0 && cnt[1] == 0) {
-                cand[0] = n;
-                cnt[0] = 1;
-            } else if(cnt[0] == 0) {
-                cand[0] = n;
-                cnt[0] = 1;
-            } else if(cnt[1] == 0) {
-                cand[1] = n;
-                cnt[1] = 1;
-            } else if(cnt[0] >= cnt[1]) {
-                --cnt[0];
-            } else {
-                --cnt[1];
-            }
+            if(n == cand1)
+                cnt1++;
+            else if(n == cand2)
+                cnt2++;
+            else if(!cnt1)
+                cand1 = n, cnt1 = 1;
+            else if(!cnt2)
+                cand2 = n, cnt2 = 1;
+            else
+                cnt1--, cnt2--;
         }
 
-        vector<int> ret;
-        cnt[0] = cnt[1] = 0;
+        cout << cand1 << ' ' << cand2 << endl;
+
+        int maj = nums.size() / 3;
+        vector<int> ans;
+        cnt1 = 0, cnt2 = 0;
         for(int n : nums) {
-            if(n == cand[0]) {
-                ++cnt[0];
-            }
-            if(n == cand[1]) {
-                ++cnt[1];
-            }
+            if(n == cand1)
+                cnt1++;
+            else if(n == cand2)
+                cnt2++;
         }
 
-        if(cnt[0] > nums.size() / 3) {
-            ret.push_back(cand[0]);
-        }
-        if(cnt[1] > nums.size() / 3 && cand[0] != cand[1]) {
-            ret.push_back(cand[1]);
-        }
+        if(cnt1 > maj)
+            ans.push_back(cand1);
+        if(cnt2 > maj)
+            ans.push_back(cand2);
 
-        return ret;
+        return ans;
     }
 };
