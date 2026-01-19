@@ -10,18 +10,20 @@ public:
             }
         }
         
-        int maxside = 0;
+        int ret = 0;
+        int side = 1;
         for(int i = 1; i <= m; ++i) {
             for(int j = 1; j <= n; ++j) {
-                for(int side = maxside + 1; side <= min(i, j); ++side) {
-                    int area = prefix[i][j] - prefix[i - side][j] - prefix[i][j - side] + prefix[i - side][j - side];
-                    if(area <= threshold) {
-                        maxside = max(maxside, side);
-                    }
+                if(i < side || j < side) {
+                    continue;
+                }
+                int area = prefix[i][j] - prefix[i - side][j] - prefix[i][j - side] + prefix[i - side][j - side];
+                if(area <= threshold) {
+                    ret = side++;
                 }
             }
         }
 
-        return maxside;
+        return ret;
     }
 };
