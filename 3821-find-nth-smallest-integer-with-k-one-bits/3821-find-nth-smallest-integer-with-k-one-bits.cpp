@@ -1,38 +1,53 @@
 class Solution {
 public:
     long long nthSmallest(long long n, int k) {
-        long long result = 0;
-        
-        // We need to determine the position of k bits, one by one.
-        // We start determining the highest (MSB) remaining bit.
-        while (k > 0) {
-            // The smallest possible position for the k-th bit is (k-1)
-            // (e.g., if k=1, smallest pos is 0).
-            int pos = k - 1;
-            
-            // cnt stores nCr(pos, k-1)
-            // Initially nCr(k-1, k-1) = 1
-            long long cnt = 1; 
-            
-            // While n is larger than the number of combinations with MSB at 'pos',
-            // it means the MSB must be at a higher position.
-            while (n > cnt) {
-                n -= cnt; // Skip these combinations
-                pos++;
-                
-                // Update combinations iteratively to avoid factorials:
-                // nCr(pos, r) = nCr(pos-1, r) * pos / (pos - r)
-                // Here r = k-1
-                cnt = cnt * pos / (pos - k + 1);
-            }
-            
-            // We found the correct position 'pos' for the current k-th bit
-            result |= (1LL << pos);
-            
-            // Now we look for the next bit (k-1 bits remaining)
-            k--;
+        if(k == 1) {
+            return 1LL << (n - 1);
         }
-        
-        return result;
+        if(n == 1) {
+            return (1LL << k) - 1;
+        }
+
+        int zeros = 0;
+        long long cnt = 1;
+        while(n - cnt > 0) {
+            n -= cnt;
+            ++zeros;
+            cnt = (cnt * (k - 1LL + zeros)) / zeros;
+        }
+
+        long long ret = 1LL << (zeros + k - 1);
+        long long lower = nthSmallest(n, k - 1);
+        return ret | lower;
     }
 };
+
+/*
+0 0  -> 2!/2!/0! = 1
+111
+
+1 0  -> 3!/2!/1! = 3
+1011
+1101
+1110
+
+2 0   -> 4!/2!/2! = 6
+10011
+10101
+10110
+11001
+11010
+11100
+
+3 0    -> 5!/2!/3! = 10
+100011
+100101
+101001
+101010
+
+...
+
+m 0    -> (k - 1 + m)!/(k - 1)!/m! = (k - 1 + m) * (k - 1 + m - 1) /(k - 1)!
+111000...0
+
+*/
