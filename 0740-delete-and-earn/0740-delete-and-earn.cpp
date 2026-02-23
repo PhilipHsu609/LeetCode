@@ -1,32 +1,30 @@
 class Solution {
 public:
     int deleteAndEarn(vector<int>& nums) {
-        int n = nums.size();
-        map<int, int> m;
+        map<int, int> dp;
 
-        for(int num : nums) {
-            m[num] += num;
+        for(int n : nums) {
+            dp[n] += n;
         }
 
-        int take = 0, skip = 0;
-        int last_num = -1;
-        for(const auto &p : m) {
-            if(last_num != -1 && p.first - 1 == last_num) {
-                // nums[i]-1 exist
-                // since nums[i]-1 exist, so the `take` variable store the best result for the sub-problem where nums[i] get removed
-                // we can only pick one of nums[i]-1 and nums[i]
-                // choose the maximum one
-                int temp = max(skip + p.second, take);
-                skip = take;
-                take = temp;
+        int pick = 0, skip = 0;
+        int last = INT_MIN;
+        int ret = 0;
+
+        for(const auto [k, v] : dp) {
+            if(last + 1 == k) {
+                // k - 1 exist
+                // if we pick k, then we must skip k - 1
+                int tmp = pick;
+                pick = skip + v;
+                skip = tmp;
             } else {
-                // nums[i]-1 not exist
-                skip = take;
-                take += p.second;
+                skip = pick;
+                pick += v;
             }
-            last_num = p.first;
+            last = k;
         }
 
-        return max(take, skip);
+        return max(pick, skip);
     }
 };
