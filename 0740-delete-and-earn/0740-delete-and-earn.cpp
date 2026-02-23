@@ -17,10 +17,11 @@ public:
                 // if we pick k, then we must skip k - 1
                 int tmp = pick;
                 pick = max(pick, skip + v);
-                skip = tmp;
+                skip = max(skip, tmp);
             } else {
-                skip = pick;
-                pick += v;
+                int tmp = pick;
+                pick = max(pick + v, skip);
+                skip = max(skip, tmp);
             }
             last = k;
         }
