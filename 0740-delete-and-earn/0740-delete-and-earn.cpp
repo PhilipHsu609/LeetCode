@@ -16,7 +16,7 @@ public:
                 // k - 1 exist
                 // if we pick k, then we must skip k - 1
                 int tmp = pick;
-                pick = skip + v;
+                pick = max(pick, skip + v);
                 skip = tmp;
             } else {
                 skip = pick;
