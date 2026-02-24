@@ -2,25 +2,29 @@ class Solution {
 public:
     long long maximumTotalDamage(vector<int>& power) {
         int n = power.size();
-        int j = 0;
-        long long max_dp = 0;
-        vector<long long> dp(n);
 
         sort(power.begin(), power.end());
 
-        dp[0] = power[0];
-        for(int i = 1; i < n; i++) {
-            if(power[i] == power[i - 1]) {
-                dp[i] = power[i] + dp[i - 1];
+        vector<long long> dp(n);
+        int lastValid = 0;
+        long long max_dp = 0;
+        long long ret = 0;
+
+        dp[0] = ret = power[0];
+        for(int i = 1; i < n; ++i) {
+            if(power[i - 1] == power[i]) {
+                dp[i] = dp[i - 1] + power[i];
             } else {
-                while(power[j] < power[i] - 2) {
-                    max_dp = max(max_dp, dp[j]);
-                    j++;
+                while(lastValid < i && power[lastValid] < power[i] - 2) {
+                    max_dp = max(max_dp, dp[lastValid]);
+                    ++lastValid;
                 }
-                dp[i] = power[i] + max_dp;
+                dp[i] = max_dp + power[i];
             }
+
+            ret = max(ret, dp[i]);
         }
 
-        return *max_element(dp.begin(), dp.end());
+        return ret;
     }
 };
