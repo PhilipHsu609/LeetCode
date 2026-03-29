@@ -44,6 +44,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/PhilipHsu609/LeetCode/tree/main/1888-minimum-number-of-flips-to-make-the-binary-string-alternating/) | Medium |
 | [1980-find-unique-binary-string](https://github.com/PhilipHsu609/LeetCode/tree/main/1980-find-unique-binary-string/) | Medium |
 | [2606-find-the-substring-with-maximum-cost](https://github.com/PhilipHsu609/LeetCode/tree/main/2606-find-the-substring-with-maximum-cost/) | Medium |
+| [2839-check-if-strings-can-be-made-equal-with-operations-i](https://github.com/PhilipHsu609/LeetCode/tree/main/2839-check-if-strings-can-be-made-equal-with-operations-i/) | Easy |
 ## Recursion
 | Problem Name | Difficulty |
 | ------- | ------- |
