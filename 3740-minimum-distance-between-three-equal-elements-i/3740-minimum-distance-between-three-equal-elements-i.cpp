@@ -13,8 +13,6 @@ public:
             if(v.size() < 3) {
                 continue;
             }
-            sort(v.begin(), v.end());
-
             for(int i = 2; i < v.size(); ++i) {
                 int d = abs(v[i - 2] - v[i - 1]) + abs(v[i - 1] - v[i]) + abs(v[i - 2] - v[i]);
                 ret = min(ret, d);
