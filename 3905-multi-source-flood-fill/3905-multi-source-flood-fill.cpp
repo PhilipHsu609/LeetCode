@@ -5,37 +5,26 @@ public:
         queue<array<int, 3>> q;
         vector<int> dirs{0, 1, 0, -1, 0};
 
+        sort(sources.begin(), sources.end(), [](const auto &a, const auto &b) {
+            return a[2] > b[2];
+        });
+
         for(const auto &src : sources) {
+            ret[src[0]][src[1]] = src[2];
             q.push({src[0], src[1], src[2]});
         }
 
         while(!q.empty()) {
-            unordered_map<int, int> cand;
-
-            for(int s = q.size(); s > 0; --s) {
-                auto [i, j, c] = q.front();
-                q.pop();
-                if(ret[i][j] == 0) {
-                    cand[i * m + j] = max(cand[i * m + j], c);
+            auto [i, j, c] = q.front();
+            q.pop();
+            for(int d = 0; d < 4; ++d) {
+                int ii = i + dirs[d];
+                int jj = j + dirs[d + 1];
+                if(ii < 0 || ii == n || jj < 0 || jj == m || ret[ii][jj] != 0) {
+                    continue;
                 }
-            }
-
-            for(auto [k, v] : cand) {
-                int i = k / m;
-                int j = k % m;
-
-                ret[i][j] = v;
-
-                for(int d = 0; d < 4; ++d) {
-                    int ii = i + dirs[d];
-                    int jj = j + dirs[d + 1];
-
-                    if(ii < 0 || ii == n || jj < 0 || jj == m || ret[ii][jj] != 0) {
-                        continue;
-                    }
-                    
-                    q.push({ii, jj, v});
-                }
+                ret[ii][jj] = c;
+                q.push({ii, jj, c});
             }
         }
 
