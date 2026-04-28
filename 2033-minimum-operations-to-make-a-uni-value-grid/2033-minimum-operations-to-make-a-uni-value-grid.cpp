@@ -1,25 +1,29 @@
 class Solution {
 public:
     int minOperations(vector<vector<int>>& grid, int x) {
-        vector<int> nums;
+        int m = grid.size(), n = grid[0].size();
 
-        for(const auto &row : grid) {
-            for(int n : row) {
-                nums.push_back(n);
+        int MOD = grid[0][0] % x;
+        vector<int> vals;
+
+        for(int i = 0; i < m; ++i) {
+            for(int j = 0; j < n; ++j) {
+                if(grid[i][j] % x != MOD) {
+                    return -1;
+                }
+                grid[i][j] /= x;
+                vals.push_back(grid[i][j]);
             }
         }
 
-        sort(nums.begin(), nums.end());
+        sort(vals.begin(), vals.end());
 
-        int target = nums[nums.size() / 2];
-        int r = target % x;
-        
         int ret = 0;
-        for(int n : nums) {
-            if(n % x != r) {
-                return -1;
+        int target = vals[vals.size() / 2];
+        for(int i = 0; i < m; ++i) {
+            for(int j = 0; j < n; ++j) {
+                ret += abs(grid[i][j] - target);
             }
-            ret += abs(target - n) / x;
         }
 
         return ret;
