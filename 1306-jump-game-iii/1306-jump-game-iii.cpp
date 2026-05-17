@@ -2,24 +2,31 @@ class Solution {
 public:
     bool canReach(vector<int>& arr, int start) {
         int n = arr.size();
-        vector<int> visited(n);
+        vector<bool> visited(n);
 
-        return dfs(start, arr, visited);
-    }
+        int ret = false;
+        auto dfs = [&](this auto &&self, int x) {
+            if(visited[x]) {
+                return;
+            }
 
-    bool dfs(int idx, const vector<int> &arr, vector<int> &visited) {
-        int n = arr.size();
+            visited[x] = true;
 
-        if(idx < 0 || idx >= n || visited[idx] == 1) {
-            return false;
-        }
+            if(arr[x] == 0) {
+                ret = true;
+                return;
+            }
 
-        if(arr[idx] == 0) {
-            return true;
-        }
+            if(x + arr[x] < n) {
+                self(x + arr[x]);
+            }
+            if(x - arr[x] >= 0) {
+                self(x - arr[x]);
+            }
+        };
 
-        visited[idx] = 1;
+        dfs(start);
 
-        return dfs(idx + arr[idx], arr, visited) || dfs(idx - arr[idx], arr, visited);
+        return ret;
     }
 };
