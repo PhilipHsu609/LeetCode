@@ -30,6 +30,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1980-find-unique-binary-string](https://github.com/PhilipHsu609/LeetCode/tree/main/1980-find-unique-binary-string/) | Medium |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/PhilipHsu609/LeetCode/tree/main/2033-minimum-operations-to-make-a-uni-value-grid/) | Medium |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/PhilipHsu609/LeetCode/tree/main/2078-two-furthest-houses-with-different-colors/) | Easy |
+| [2126-destroying-asteroids](https://github.com/PhilipHsu609/LeetCode/tree/main/2126-destroying-asteroids/) | Medium |
 | [2452-words-within-two-edits-of-dictionary](https://github.com/PhilipHsu609/LeetCode/tree/main/2452-words-within-two-edits-of-dictionary/) | Medium |
 | [2463-minimum-total-distance-traveled](https://github.com/PhilipHsu609/LeetCode/tree/main/2463-minimum-total-distance-traveled/) | Hard |
 | [2553-separate-the-digits-in-an-array](https://github.com/PhilipHsu609/LeetCode/tree/main/2553-separate-the-digits-in-an-array/) | Easy |
@@ -54,6 +55,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/PhilipHsu609/LeetCode/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
 | [1727-largest-submatrix-with-rearrangements](https://github.com/PhilipHsu609/LeetCode/tree/main/1727-largest-submatrix-with-rearrangements/) | Medium |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/PhilipHsu609/LeetCode/tree/main/2078-two-furthest-houses-with-different-colors/) | Easy |
+| [2126-destroying-asteroids](https://github.com/PhilipHsu609/LeetCode/tree/main/2126-destroying-asteroids/) | Medium |
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -148,6 +150,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/PhilipHsu609/LeetCode/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
 | [1727-largest-submatrix-with-rearrangements](https://github.com/PhilipHsu609/LeetCode/tree/main/1727-largest-submatrix-with-rearrangements/) | Medium |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/PhilipHsu609/LeetCode/tree/main/2033-minimum-operations-to-make-a-uni-value-grid/) | Medium |
+| [2126-destroying-asteroids](https://github.com/PhilipHsu609/LeetCode/tree/main/2126-destroying-asteroids/) | Medium |
 | [2463-minimum-total-distance-traveled](https://github.com/PhilipHsu609/LeetCode/tree/main/2463-minimum-total-distance-traveled/) | Hard |
 | [2784-check-if-array-is-good](https://github.com/PhilipHsu609/LeetCode/tree/main/2784-check-if-array-is-good/) | Easy |
 | [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/2840-check-if-strings-can-be-made-equal-with-operations-ii/) | Medium |
