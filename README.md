@@ -220,6 +220,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0958-check-completeness-of-a-binary-tree](https://github.com/PhilipHsu609/LeetCode/tree/main/0958-check-completeness-of-a-binary-tree/) | Medium |
 | [1306-jump-game-iii](https://github.com/PhilipHsu609/LeetCode/tree/main/1306-jump-game-iii/) | Medium |
 | [1345-jump-game-iv](https://github.com/PhilipHsu609/LeetCode/tree/main/1345-jump-game-iv/) | Hard |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/PhilipHsu609/LeetCode/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
@@ -232,4 +233,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0061-rotate-list](https://github.com/PhilipHsu609/LeetCode/tree/main/0061-rotate-list/) | Medium |
+## Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0958-check-completeness-of-a-binary-tree](https://github.com/PhilipHsu609/LeetCode/tree/main/0958-check-completeness-of-a-binary-tree/) | Medium |
+## Binary Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0958-check-completeness-of-a-binary-tree](https://github.com/PhilipHsu609/LeetCode/tree/main/0958-check-completeness-of-a-binary-tree/) | Medium |
 <!---LeetCode Topics End-->
