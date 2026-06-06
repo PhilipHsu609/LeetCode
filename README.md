@@ -225,6 +225,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0958-check-completeness-of-a-binary-tree](https://github.com/PhilipHsu609/LeetCode/tree/main/0958-check-completeness-of-a-binary-tree/) | Medium |
+| [1129-shortest-path-with-alternating-colors](https://github.com/PhilipHsu609/LeetCode/tree/main/1129-shortest-path-with-alternating-colors/) | Medium |
 | [1306-jump-game-iii](https://github.com/PhilipHsu609/LeetCode/tree/main/1306-jump-game-iii/) | Medium |
 | [1345-jump-game-iv](https://github.com/PhilipHsu609/LeetCode/tree/main/1345-jump-game-iv/) | Hard |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/PhilipHsu609/LeetCode/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
@@ -245,4 +246,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0958-check-completeness-of-a-binary-tree](https://github.com/PhilipHsu609/LeetCode/tree/main/0958-check-completeness-of-a-binary-tree/) | Medium |
+## Graph Theory
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1129-shortest-path-with-alternating-colors](https://github.com/PhilipHsu609/LeetCode/tree/main/1129-shortest-path-with-alternating-colors/) | Medium |
 <!---LeetCode Topics End-->
