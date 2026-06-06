@@ -12,6 +12,7 @@ public:
         }
 
         vector<vector<int>> dis(2, vector<int>(n, INT_MAX));
+        vector<int> ret(n, -1);
         queue<array<int, 2>> q; // {node, isRed}
 
         dis[0][0] = dis[1][0] = 0;
@@ -21,6 +22,10 @@ public:
         while(!q.empty()) {
             auto [u, isRed] = q.front();
             q.pop();
+
+            if(ret[u] == -1) {
+                ret[u] = min(dis[0][u], dis[1][u]);
+            }
 
             const auto &adj = [&]() {
                 return isRed ? adjB : adjR;
@@ -32,14 +37,6 @@ public:
                 }
                 dis[1 - isRed][v] = dis[isRed][u] + 1;
                 q.push({v, 1 - isRed});
-            }
-        }
-
-        vector<int> ret(n);
-        for(int i = 0; i < n; ++i) {
-            ret[i] = min(dis[0][i], dis[1][i]);
-            if(ret[i] == INT_MAX) {
-                ret[i] = -1;
             }
         }
 
