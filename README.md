@@ -115,6 +115,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0053-maximum-subarray](https://github.com/PhilipHsu609/LeetCode/tree/main/0053-maximum-subarray/) | Medium |
 | [0396-rotate-function](https://github.com/PhilipHsu609/LeetCode/tree/main/0396-rotate-function/) | Medium |
 | [0788-rotated-digits](https://github.com/PhilipHsu609/LeetCode/tree/main/0788-rotated-digits/) | Medium |
+| [1155-number-of-dice-rolls-with-target-sum](https://github.com/PhilipHsu609/LeetCode/tree/main/1155-number-of-dice-rolls-with-target-sum/) | Medium |
 | [1594-maximum-non-negative-product-in-a-matrix](https://github.com/PhilipHsu609/LeetCode/tree/main/1594-maximum-non-negative-product-in-a-matrix/) | Medium |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/PhilipHsu609/LeetCode/tree/main/1888-minimum-number-of-flips-to-make-the-binary-string-alternating/) | Medium |
 | [2463-minimum-total-distance-traveled](https://github.com/PhilipHsu609/LeetCode/tree/main/2463-minimum-total-distance-traveled/) | Hard |
