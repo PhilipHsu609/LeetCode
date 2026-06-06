@@ -34,6 +34,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2452-words-within-two-edits-of-dictionary](https://github.com/PhilipHsu609/LeetCode/tree/main/2452-words-within-two-edits-of-dictionary/) | Medium |
 | [2463-minimum-total-distance-traveled](https://github.com/PhilipHsu609/LeetCode/tree/main/2463-minimum-total-distance-traveled/) | Hard |
 | [2553-separate-the-digits-in-an-array](https://github.com/PhilipHsu609/LeetCode/tree/main/2553-separate-the-digits-in-an-array/) | Easy |
+| [2574-left-and-right-sum-differences](https://github.com/PhilipHsu609/LeetCode/tree/main/2574-left-and-right-sum-differences/) | Easy |
 | [2606-find-the-substring-with-maximum-cost](https://github.com/PhilipHsu609/LeetCode/tree/main/2606-find-the-substring-with-maximum-cost/) | Medium |
 | [2615-sum-of-distances](https://github.com/PhilipHsu609/LeetCode/tree/main/2615-sum-of-distances/) | Medium |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/PhilipHsu609/LeetCode/tree/main/2657-find-the-prefix-common-array-of-two-arrays/) | Medium |
@@ -157,6 +158,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Prefix Sum
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [2574-left-and-right-sum-differences](https://github.com/PhilipHsu609/LeetCode/tree/main/2574-left-and-right-sum-differences/) | Easy |
 | [2615-sum-of-distances](https://github.com/PhilipHsu609/LeetCode/tree/main/2615-sum-of-distances/) | Medium |
 | [3070-count-submatrices-with-top-left-element-and-sum-less-than-k](https://github.com/PhilipHsu609/LeetCode/tree/main/3070-count-submatrices-with-top-left-element-and-sum-less-than-k/) | Medium |
 | [3212-count-submatrices-with-equal-frequency-of-x-and-y](https://github.com/PhilipHsu609/LeetCode/tree/main/3212-count-submatrices-with-equal-frequency-of-x-and-y/) | Medium |
