@@ -157,6 +157,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2463-minimum-total-distance-traveled](https://github.com/PhilipHsu609/LeetCode/tree/main/2463-minimum-total-distance-traveled/) | Hard |
 | [2784-check-if-array-is-good](https://github.com/PhilipHsu609/LeetCode/tree/main/2784-check-if-array-is-good/) | Easy |
 | [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/2840-check-if-strings-can-be-made-equal-with-operations-ii/) | Medium |
+| [3613-minimize-maximum-component-cost](https://github.com/PhilipHsu609/LeetCode/tree/main/3613-minimize-maximum-component-cost/) | Medium |
 ## Prefix Sum
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -194,6 +195,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/0154-find-minimum-in-rotated-sorted-array-ii/) | Hard |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/PhilipHsu609/LeetCode/tree/main/1855-maximum-distance-between-a-pair-of-values/) | Medium |
 | [3488-closest-equal-element-queries](https://github.com/PhilipHsu609/LeetCode/tree/main/3488-closest-equal-element-queries/) | Medium |
+| [3613-minimize-maximum-component-cost](https://github.com/PhilipHsu609/LeetCode/tree/main/3613-minimize-maximum-component-cost/) | Medium |
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -213,6 +215,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/PhilipHsu609/LeetCode/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 | [1559-detect-cycles-in-2d-grid](https://github.com/PhilipHsu609/LeetCode/tree/main/1559-detect-cycles-in-2d-grid/) | Medium |
 | [1722-minimize-hamming-distance-after-swap-operations](https://github.com/PhilipHsu609/LeetCode/tree/main/1722-minimize-hamming-distance-after-swap-operations/) | Medium |
+| [3613-minimize-maximum-component-cost](https://github.com/PhilipHsu609/LeetCode/tree/main/3613-minimize-maximum-component-cost/) | Medium |
 ## Trie
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -250,4 +253,5 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1129-shortest-path-with-alternating-colors](https://github.com/PhilipHsu609/LeetCode/tree/main/1129-shortest-path-with-alternating-colors/) | Medium |
+| [3613-minimize-maximum-component-cost](https://github.com/PhilipHsu609/LeetCode/tree/main/3613-minimize-maximum-component-cost/) | Medium |
 <!---LeetCode Topics End-->
