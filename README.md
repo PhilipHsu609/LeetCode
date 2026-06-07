@@ -45,6 +45,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3070-count-submatrices-with-top-left-element-and-sum-less-than-k](https://github.com/PhilipHsu609/LeetCode/tree/main/3070-count-submatrices-with-top-left-element-and-sum-less-than-k/) | Medium |
 | [3212-count-submatrices-with-equal-frequency-of-x-and-y](https://github.com/PhilipHsu609/LeetCode/tree/main/3212-count-submatrices-with-equal-frequency-of-x-and-y/) | Medium |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/PhilipHsu609/LeetCode/tree/main/3300-minimum-element-after-replacement-with-digit-sum/) | Easy |
+| [3478-choose-k-elements-with-maximum-sum](https://github.com/PhilipHsu609/LeetCode/tree/main/3478-choose-k-elements-with-maximum-sum/) | Medium |
 | [3488-closest-equal-element-queries](https://github.com/PhilipHsu609/LeetCode/tree/main/3488-closest-equal-element-queries/) | Medium |
 | [3514-number-of-unique-xor-triplets-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/3514-number-of-unique-xor-triplets-ii/) | Medium |
 | [3546-equal-sum-grid-partition-i](https://github.com/PhilipHsu609/LeetCode/tree/main/3546-equal-sum-grid-partition-i/) | Medium |
@@ -167,6 +168,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2463-minimum-total-distance-traveled](https://github.com/PhilipHsu609/LeetCode/tree/main/2463-minimum-total-distance-traveled/) | Hard |
 | [2784-check-if-array-is-good](https://github.com/PhilipHsu609/LeetCode/tree/main/2784-check-if-array-is-good/) | Easy |
 | [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/2840-check-if-strings-can-be-made-equal-with-operations-ii/) | Medium |
+| [3478-choose-k-elements-with-maximum-sum](https://github.com/PhilipHsu609/LeetCode/tree/main/3478-choose-k-elements-with-maximum-sum/) | Medium |
 | [3613-minimize-maximum-component-cost](https://github.com/PhilipHsu609/LeetCode/tree/main/3613-minimize-maximum-component-cost/) | Medium |
 ## Prefix Sum
 | Problem Name | Difficulty |
@@ -268,4 +270,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [1129-shortest-path-with-alternating-colors](https://github.com/PhilipHsu609/LeetCode/tree/main/1129-shortest-path-with-alternating-colors/) | Medium |
 | [3613-minimize-maximum-component-cost](https://github.com/PhilipHsu609/LeetCode/tree/main/3613-minimize-maximum-component-cost/) | Medium |
+## Heap (Priority Queue)
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3478-choose-k-elements-with-maximum-sum](https://github.com/PhilipHsu609/LeetCode/tree/main/3478-choose-k-elements-with-maximum-sum/) | Medium |
 <!---LeetCode Topics End-->
