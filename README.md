@@ -48,6 +48,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3488-closest-equal-element-queries](https://github.com/PhilipHsu609/LeetCode/tree/main/3488-closest-equal-element-queries/) | Medium |
 | [3514-number-of-unique-xor-triplets-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/3514-number-of-unique-xor-triplets-ii/) | Medium |
 | [3546-equal-sum-grid-partition-i](https://github.com/PhilipHsu609/LeetCode/tree/main/3546-equal-sum-grid-partition-i/) | Medium |
+| [3584-maximum-product-of-first-and-last-elements-of-a-subsequence](https://github.com/PhilipHsu609/LeetCode/tree/main/3584-maximum-product-of-first-and-last-elements-of-a-subsequence/) | Medium |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/PhilipHsu609/LeetCode/tree/main/3653-xor-after-range-multiplication-queries-i/) | Medium |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/PhilipHsu609/LeetCode/tree/main/3740-minimum-distance-between-three-equal-elements-i/) | Easy |
 | [3741-minimum-distance-between-three-equal-elements-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/3741-minimum-distance-between-three-equal-elements-ii/) | Medium |
@@ -212,6 +213,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0948-bag-of-tokens](https://github.com/PhilipHsu609/LeetCode/tree/main/0948-bag-of-tokens/) | Medium |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/PhilipHsu609/LeetCode/tree/main/1855-maximum-distance-between-a-pair-of-values/) | Medium |
 | [1861-rotating-the-box](https://github.com/PhilipHsu609/LeetCode/tree/main/1861-rotating-the-box/) | Medium |
+| [3584-maximum-product-of-first-and-last-elements-of-a-subsequence](https://github.com/PhilipHsu609/LeetCode/tree/main/3584-maximum-product-of-first-and-last-elements-of-a-subsequence/) | Medium |
 ## Depth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
