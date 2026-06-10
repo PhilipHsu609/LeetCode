@@ -53,6 +53,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3584-maximum-product-of-first-and-last-elements-of-a-subsequence](https://github.com/PhilipHsu609/LeetCode/tree/main/3584-maximum-product-of-first-and-last-elements-of-a-subsequence/) | Medium |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/PhilipHsu609/LeetCode/tree/main/3653-xor-after-range-multiplication-queries-i/) | Medium |
 | [3689-maximum-total-subarray-value-i](https://github.com/PhilipHsu609/LeetCode/tree/main/3689-maximum-total-subarray-value-i/) | Medium |
+| [3691-maximum-total-subarray-value-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/3691-maximum-total-subarray-value-ii/) | Hard |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/PhilipHsu609/LeetCode/tree/main/3740-minimum-distance-between-three-equal-elements-i/) | Easy |
 | [3741-minimum-distance-between-three-equal-elements-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/3741-minimum-distance-between-three-equal-elements-ii/) | Medium |
 | [3761-minimum-absolute-distance-between-mirror-pairs](https://github.com/PhilipHsu609/LeetCode/tree/main/3761-minimum-absolute-distance-between-mirror-pairs/) | Medium |
@@ -66,6 +67,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2078-two-furthest-houses-with-different-colors](https://github.com/PhilipHsu609/LeetCode/tree/main/2078-two-furthest-houses-with-different-colors/) | Easy |
 | [2126-destroying-asteroids](https://github.com/PhilipHsu609/LeetCode/tree/main/2126-destroying-asteroids/) | Medium |
 | [3689-maximum-total-subarray-value-i](https://github.com/PhilipHsu609/LeetCode/tree/main/3689-maximum-total-subarray-value-i/) | Medium |
+| [3691-maximum-total-subarray-value-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/3691-maximum-total-subarray-value-ii/) | Hard |
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -279,4 +281,9 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3478-choose-k-elements-with-maximum-sum](https://github.com/PhilipHsu609/LeetCode/tree/main/3478-choose-k-elements-with-maximum-sum/) | Medium |
+| [3691-maximum-total-subarray-value-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/3691-maximum-total-subarray-value-ii/) | Hard |
+## Segment Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3691-maximum-total-subarray-value-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/3691-maximum-total-subarray-value-ii/) | Hard |
 <!---LeetCode Topics End-->
