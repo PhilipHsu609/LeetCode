@@ -42,6 +42,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2615-sum-of-distances](https://github.com/PhilipHsu609/LeetCode/tree/main/2615-sum-of-distances/) | Medium |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/PhilipHsu609/LeetCode/tree/main/2657-find-the-prefix-common-array-of-two-arrays/) | Medium |
 | [2784-check-if-array-is-good](https://github.com/PhilipHsu609/LeetCode/tree/main/2784-check-if-array-is-good/) | Easy |
+| [2901-longest-unequal-adjacent-groups-subsequence-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/2901-longest-unequal-adjacent-groups-subsequence-ii/) | Medium |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/PhilipHsu609/LeetCode/tree/main/2946-matrix-similarity-after-cyclic-shifts/) | Easy |
 | [3070-count-submatrices-with-top-left-element-and-sum-less-than-k](https://github.com/PhilipHsu609/LeetCode/tree/main/3070-count-submatrices-with-top-left-element-and-sum-less-than-k/) | Medium |
 | [3212-count-submatrices-with-equal-frequency-of-x-and-y](https://github.com/PhilipHsu609/LeetCode/tree/main/3212-count-submatrices-with-equal-frequency-of-x-and-y/) | Medium |
@@ -100,6 +101,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2833-furthest-point-from-origin](https://github.com/PhilipHsu609/LeetCode/tree/main/2833-furthest-point-from-origin/) | Easy |
 | [2839-check-if-strings-can-be-made-equal-with-operations-i](https://github.com/PhilipHsu609/LeetCode/tree/main/2839-check-if-strings-can-be-made-equal-with-operations-i/) | Easy |
 | [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/2840-check-if-strings-can-be-made-equal-with-operations-ii/) | Medium |
+| [2901-longest-unequal-adjacent-groups-subsequence-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/2901-longest-unequal-adjacent-groups-subsequence-ii/) | Medium |
 | [3121-count-the-number-of-special-characters-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/3121-count-the-number-of-special-characters-ii/) | Medium |
 ## Recursion
 | Problem Name | Difficulty |
@@ -130,6 +132,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/PhilipHsu609/LeetCode/tree/main/1888-minimum-number-of-flips-to-make-the-binary-string-alternating/) | Medium |
 | [2463-minimum-total-distance-traveled](https://github.com/PhilipHsu609/LeetCode/tree/main/2463-minimum-total-distance-traveled/) | Hard |
 | [2606-find-the-substring-with-maximum-cost](https://github.com/PhilipHsu609/LeetCode/tree/main/2606-find-the-substring-with-maximum-cost/) | Medium |
+| [2901-longest-unequal-adjacent-groups-subsequence-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/2901-longest-unequal-adjacent-groups-subsequence-ii/) | Medium |
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
