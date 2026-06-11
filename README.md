@@ -204,6 +204,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/PhilipHsu609/LeetCode/tree/main/2946-matrix-similarity-after-cyclic-shifts/) | Easy |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/PhilipHsu609/LeetCode/tree/main/3300-minimum-element-after-replacement-with-digit-sum/) | Easy |
 | [3514-number-of-unique-xor-triplets-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/3514-number-of-unique-xor-triplets-ii/) | Medium |
+| [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/PhilipHsu609/LeetCode/tree/main/3558-number-of-ways-to-assign-edge-weights-i/) | Medium |
 | [3761-minimum-absolute-distance-between-mirror-pairs](https://github.com/PhilipHsu609/LeetCode/tree/main/3761-minimum-absolute-distance-between-mirror-pairs/) | Medium |
 | [3783-mirror-distance-of-an-integer](https://github.com/PhilipHsu609/LeetCode/tree/main/3783-mirror-distance-of-an-integer/) | Easy |
 ## Design
@@ -235,6 +236,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/PhilipHsu609/LeetCode/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 | [1559-detect-cycles-in-2d-grid](https://github.com/PhilipHsu609/LeetCode/tree/main/1559-detect-cycles-in-2d-grid/) | Medium |
 | [1722-minimize-hamming-distance-after-swap-operations](https://github.com/PhilipHsu609/LeetCode/tree/main/1722-minimize-hamming-distance-after-swap-operations/) | Medium |
+| [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/PhilipHsu609/LeetCode/tree/main/3558-number-of-ways-to-assign-edge-weights-i/) | Medium |
 ## Union-Find
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -272,6 +274,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0958-check-completeness-of-a-binary-tree](https://github.com/PhilipHsu609/LeetCode/tree/main/0958-check-completeness-of-a-binary-tree/) | Medium |
 | [2196-create-binary-tree-from-descriptions](https://github.com/PhilipHsu609/LeetCode/tree/main/2196-create-binary-tree-from-descriptions/) | Medium |
+| [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/PhilipHsu609/LeetCode/tree/main/3558-number-of-ways-to-assign-edge-weights-i/) | Medium |
 ## Binary Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
