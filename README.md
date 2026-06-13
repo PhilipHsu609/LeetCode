@@ -41,6 +41,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2606-find-the-substring-with-maximum-cost](https://github.com/PhilipHsu609/LeetCode/tree/main/2606-find-the-substring-with-maximum-cost/) | Medium |
 | [2615-sum-of-distances](https://github.com/PhilipHsu609/LeetCode/tree/main/2615-sum-of-distances/) | Medium |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/PhilipHsu609/LeetCode/tree/main/2657-find-the-prefix-common-array-of-two-arrays/) | Medium |
+| [2766-relocate-marbles](https://github.com/PhilipHsu609/LeetCode/tree/main/2766-relocate-marbles/) | Medium |
 | [2784-check-if-array-is-good](https://github.com/PhilipHsu609/LeetCode/tree/main/2784-check-if-array-is-good/) | Easy |
 | [2901-longest-unequal-adjacent-groups-subsequence-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/2901-longest-unequal-adjacent-groups-subsequence-ii/) | Medium |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/PhilipHsu609/LeetCode/tree/main/2946-matrix-similarity-after-cyclic-shifts/) | Easy |
@@ -118,6 +119,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2069-walking-robot-simulation-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/2069-walking-robot-simulation-ii/) | Medium |
 | [2161-partition-array-according-to-given-pivot](https://github.com/PhilipHsu609/LeetCode/tree/main/2161-partition-array-according-to-given-pivot/) | Medium |
 | [2553-separate-the-digits-in-an-array](https://github.com/PhilipHsu609/LeetCode/tree/main/2553-separate-the-digits-in-an-array/) | Easy |
+| [2766-relocate-marbles](https://github.com/PhilipHsu609/LeetCode/tree/main/2766-relocate-marbles/) | Medium |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/PhilipHsu609/LeetCode/tree/main/2946-matrix-similarity-after-cyclic-shifts/) | Easy |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/PhilipHsu609/LeetCode/tree/main/3653-xor-after-range-multiplication-queries-i/) | Medium |
 | [3838-weighted-word-mapping](https://github.com/PhilipHsu609/LeetCode/tree/main/3838-weighted-word-mapping/) | Easy |
@@ -153,6 +155,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2606-find-the-substring-with-maximum-cost](https://github.com/PhilipHsu609/LeetCode/tree/main/2606-find-the-substring-with-maximum-cost/) | Medium |
 | [2615-sum-of-distances](https://github.com/PhilipHsu609/LeetCode/tree/main/2615-sum-of-distances/) | Medium |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/PhilipHsu609/LeetCode/tree/main/2657-find-the-prefix-common-array-of-two-arrays/) | Medium |
+| [2766-relocate-marbles](https://github.com/PhilipHsu609/LeetCode/tree/main/2766-relocate-marbles/) | Medium |
 | [2784-check-if-array-is-good](https://github.com/PhilipHsu609/LeetCode/tree/main/2784-check-if-array-is-good/) | Easy |
 | [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/2840-check-if-strings-can-be-made-equal-with-operations-ii/) | Medium |
 | [3121-count-the-number-of-special-characters-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/3121-count-the-number-of-special-characters-ii/) | Medium |
@@ -180,6 +183,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/PhilipHsu609/LeetCode/tree/main/2033-minimum-operations-to-make-a-uni-value-grid/) | Medium |
 | [2126-destroying-asteroids](https://github.com/PhilipHsu609/LeetCode/tree/main/2126-destroying-asteroids/) | Medium |
 | [2463-minimum-total-distance-traveled](https://github.com/PhilipHsu609/LeetCode/tree/main/2463-minimum-total-distance-traveled/) | Hard |
+| [2766-relocate-marbles](https://github.com/PhilipHsu609/LeetCode/tree/main/2766-relocate-marbles/) | Medium |
 | [2784-check-if-array-is-good](https://github.com/PhilipHsu609/LeetCode/tree/main/2784-check-if-array-is-good/) | Easy |
 | [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/2840-check-if-strings-can-be-made-equal-with-operations-ii/) | Medium |
 | [3478-choose-k-elements-with-maximum-sum](https://github.com/PhilipHsu609/LeetCode/tree/main/3478-choose-k-elements-with-maximum-sum/) | Medium |
