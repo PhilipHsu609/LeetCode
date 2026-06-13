@@ -44,6 +44,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2766-relocate-marbles](https://github.com/PhilipHsu609/LeetCode/tree/main/2766-relocate-marbles/) | Medium |
 | [2784-check-if-array-is-good](https://github.com/PhilipHsu609/LeetCode/tree/main/2784-check-if-array-is-good/) | Easy |
 | [2901-longest-unequal-adjacent-groups-subsequence-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/2901-longest-unequal-adjacent-groups-subsequence-ii/) | Medium |
+| [2915-length-of-the-longest-subsequence-that-sums-to-target](https://github.com/PhilipHsu609/LeetCode/tree/main/2915-length-of-the-longest-subsequence-that-sums-to-target/) | Medium |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/PhilipHsu609/LeetCode/tree/main/2946-matrix-similarity-after-cyclic-shifts/) | Easy |
 | [3070-count-submatrices-with-top-left-element-and-sum-less-than-k](https://github.com/PhilipHsu609/LeetCode/tree/main/3070-count-submatrices-with-top-left-element-and-sum-less-than-k/) | Medium |
 | [3212-count-submatrices-with-equal-frequency-of-x-and-y](https://github.com/PhilipHsu609/LeetCode/tree/main/3212-count-submatrices-with-equal-frequency-of-x-and-y/) | Medium |
@@ -140,6 +141,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2463-minimum-total-distance-traveled](https://github.com/PhilipHsu609/LeetCode/tree/main/2463-minimum-total-distance-traveled/) | Hard |
 | [2606-find-the-substring-with-maximum-cost](https://github.com/PhilipHsu609/LeetCode/tree/main/2606-find-the-substring-with-maximum-cost/) | Medium |
 | [2901-longest-unequal-adjacent-groups-subsequence-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/2901-longest-unequal-adjacent-groups-subsequence-ii/) | Medium |
+| [2915-length-of-the-longest-subsequence-that-sums-to-target](https://github.com/PhilipHsu609/LeetCode/tree/main/2915-length-of-the-longest-subsequence-that-sums-to-target/) | Medium |
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
