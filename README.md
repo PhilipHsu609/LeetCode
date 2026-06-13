@@ -13,6 +13,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/0154-find-minimum-in-rotated-sorted-array-ii/) | Hard |
 | [0396-rotate-function](https://github.com/PhilipHsu609/LeetCode/tree/main/0396-rotate-function/) | Medium |
 | [0948-bag-of-tokens](https://github.com/PhilipHsu609/LeetCode/tree/main/0948-bag-of-tokens/) | Medium |
+| [1289-minimum-falling-path-sum-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/1289-minimum-falling-path-sum-ii/) | Hard |
 | [1306-jump-game-iii](https://github.com/PhilipHsu609/LeetCode/tree/main/1306-jump-game-iii/) | Medium |
 | [1345-jump-game-iv](https://github.com/PhilipHsu609/LeetCode/tree/main/1345-jump-game-iv/) | Hard |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/PhilipHsu609/LeetCode/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
@@ -78,6 +79,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0048-rotate-image](https://github.com/PhilipHsu609/LeetCode/tree/main/0048-rotate-image/) | Medium |
+| [1289-minimum-falling-path-sum-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/1289-minimum-falling-path-sum-ii/) | Hard |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/PhilipHsu609/LeetCode/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/PhilipHsu609/LeetCode/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
 | [1559-detect-cycles-in-2d-grid](https://github.com/PhilipHsu609/LeetCode/tree/main/1559-detect-cycles-in-2d-grid/) | Medium |
@@ -138,6 +140,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0788-rotated-digits](https://github.com/PhilipHsu609/LeetCode/tree/main/0788-rotated-digits/) | Medium |
 | [0926-flip-string-to-monotone-increasing](https://github.com/PhilipHsu609/LeetCode/tree/main/0926-flip-string-to-monotone-increasing/) | Medium |
 | [1155-number-of-dice-rolls-with-target-sum](https://github.com/PhilipHsu609/LeetCode/tree/main/1155-number-of-dice-rolls-with-target-sum/) | Medium |
+| [1289-minimum-falling-path-sum-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/1289-minimum-falling-path-sum-ii/) | Hard |
 | [1594-maximum-non-negative-product-in-a-matrix](https://github.com/PhilipHsu609/LeetCode/tree/main/1594-maximum-non-negative-product-in-a-matrix/) | Medium |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/PhilipHsu609/LeetCode/tree/main/1888-minimum-number-of-flips-to-make-the-binary-string-alternating/) | Medium |
 | [2463-minimum-total-distance-traveled](https://github.com/PhilipHsu609/LeetCode/tree/main/2463-minimum-total-distance-traveled/) | Hard |
