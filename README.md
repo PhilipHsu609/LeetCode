@@ -241,6 +241,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0948-bag-of-tokens](https://github.com/PhilipHsu609/LeetCode/tree/main/0948-bag-of-tokens/) | Medium |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/PhilipHsu609/LeetCode/tree/main/1855-maximum-distance-between-a-pair-of-values/) | Medium |
 | [1861-rotating-the-box](https://github.com/PhilipHsu609/LeetCode/tree/main/1861-rotating-the-box/) | Medium |
+| [2130-maximum-twin-sum-of-a-linked-list](https://github.com/PhilipHsu609/LeetCode/tree/main/2130-maximum-twin-sum-of-a-linked-list/) | Medium |
 | [2161-partition-array-according-to-given-pivot](https://github.com/PhilipHsu609/LeetCode/tree/main/2161-partition-array-according-to-given-pivot/) | Medium |
 | [3584-maximum-product-of-first-and-last-elements-of-a-subsequence](https://github.com/PhilipHsu609/LeetCode/tree/main/3584-maximum-product-of-first-and-last-elements-of-a-subsequence/) | Medium |
 ## Depth-First Search
@@ -283,6 +284,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0061-rotate-list](https://github.com/PhilipHsu609/LeetCode/tree/main/0061-rotate-list/) | Medium |
+| [2130-maximum-twin-sum-of-a-linked-list](https://github.com/PhilipHsu609/LeetCode/tree/main/2130-maximum-twin-sum-of-a-linked-list/) | Medium |
 ## Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -308,4 +310,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3691-maximum-total-subarray-value-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/3691-maximum-total-subarray-value-ii/) | Hard |
+## Stack
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2130-maximum-twin-sum-of-a-linked-list](https://github.com/PhilipHsu609/LeetCode/tree/main/2130-maximum-twin-sum-of-a-linked-list/) | Medium |
 <!---LeetCode Topics End-->
