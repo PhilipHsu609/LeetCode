@@ -31,6 +31,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1861-rotating-the-box](https://github.com/PhilipHsu609/LeetCode/tree/main/1861-rotating-the-box/) | Medium |
 | [1886-determine-whether-matrix-can-be-obtained-by-rotation](https://github.com/PhilipHsu609/LeetCode/tree/main/1886-determine-whether-matrix-can-be-obtained-by-rotation/) | Easy |
 | [1980-find-unique-binary-string](https://github.com/PhilipHsu609/LeetCode/tree/main/1980-find-unique-binary-string/) | Medium |
+| [2008-maximum-earnings-from-taxi](https://github.com/PhilipHsu609/LeetCode/tree/main/2008-maximum-earnings-from-taxi/) | Medium |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/PhilipHsu609/LeetCode/tree/main/2033-minimum-operations-to-make-a-uni-value-grid/) | Medium |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/PhilipHsu609/LeetCode/tree/main/2078-two-furthest-houses-with-different-colors/) | Easy |
 | [2126-destroying-asteroids](https://github.com/PhilipHsu609/LeetCode/tree/main/2126-destroying-asteroids/) | Medium |
@@ -146,6 +147,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1289-minimum-falling-path-sum-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/1289-minimum-falling-path-sum-ii/) | Hard |
 | [1594-maximum-non-negative-product-in-a-matrix](https://github.com/PhilipHsu609/LeetCode/tree/main/1594-maximum-non-negative-product-in-a-matrix/) | Medium |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/PhilipHsu609/LeetCode/tree/main/1888-minimum-number-of-flips-to-make-the-binary-string-alternating/) | Medium |
+| [2008-maximum-earnings-from-taxi](https://github.com/PhilipHsu609/LeetCode/tree/main/2008-maximum-earnings-from-taxi/) | Medium |
 | [2463-minimum-total-distance-traveled](https://github.com/PhilipHsu609/LeetCode/tree/main/2463-minimum-total-distance-traveled/) | Hard |
 | [2606-find-the-substring-with-maximum-cost](https://github.com/PhilipHsu609/LeetCode/tree/main/2606-find-the-substring-with-maximum-cost/) | Medium |
 | [2901-longest-unequal-adjacent-groups-subsequence-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/2901-longest-unequal-adjacent-groups-subsequence-ii/) | Medium |
@@ -161,6 +163,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1156-swap-for-longest-repeated-character-substring](https://github.com/PhilipHsu609/LeetCode/tree/main/1156-swap-for-longest-repeated-character-substring/) | Medium |
 | [1345-jump-game-iv](https://github.com/PhilipHsu609/LeetCode/tree/main/1345-jump-game-iv/) | Hard |
 | [1980-find-unique-binary-string](https://github.com/PhilipHsu609/LeetCode/tree/main/1980-find-unique-binary-string/) | Medium |
+| [2008-maximum-earnings-from-taxi](https://github.com/PhilipHsu609/LeetCode/tree/main/2008-maximum-earnings-from-taxi/) | Medium |
 | [2196-create-binary-tree-from-descriptions](https://github.com/PhilipHsu609/LeetCode/tree/main/2196-create-binary-tree-from-descriptions/) | Medium |
 | [2606-find-the-substring-with-maximum-cost](https://github.com/PhilipHsu609/LeetCode/tree/main/2606-find-the-substring-with-maximum-cost/) | Medium |
 | [2615-sum-of-distances](https://github.com/PhilipHsu609/LeetCode/tree/main/2615-sum-of-distances/) | Medium |
@@ -190,6 +193,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0948-bag-of-tokens](https://github.com/PhilipHsu609/LeetCode/tree/main/0948-bag-of-tokens/) | Medium |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/PhilipHsu609/LeetCode/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
 | [1727-largest-submatrix-with-rearrangements](https://github.com/PhilipHsu609/LeetCode/tree/main/1727-largest-submatrix-with-rearrangements/) | Medium |
+| [2008-maximum-earnings-from-taxi](https://github.com/PhilipHsu609/LeetCode/tree/main/2008-maximum-earnings-from-taxi/) | Medium |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/PhilipHsu609/LeetCode/tree/main/2033-minimum-operations-to-make-a-uni-value-grid/) | Medium |
 | [2126-destroying-asteroids](https://github.com/PhilipHsu609/LeetCode/tree/main/2126-destroying-asteroids/) | Medium |
 | [2463-minimum-total-distance-traveled](https://github.com/PhilipHsu609/LeetCode/tree/main/2463-minimum-total-distance-traveled/) | Hard |
@@ -237,6 +241,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/PhilipHsu609/LeetCode/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/0154-find-minimum-in-rotated-sorted-array-ii/) | Hard |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/PhilipHsu609/LeetCode/tree/main/1855-maximum-distance-between-a-pair-of-values/) | Medium |
+| [2008-maximum-earnings-from-taxi](https://github.com/PhilipHsu609/LeetCode/tree/main/2008-maximum-earnings-from-taxi/) | Medium |
 | [3488-closest-equal-element-queries](https://github.com/PhilipHsu609/LeetCode/tree/main/3488-closest-equal-element-queries/) | Medium |
 | [3613-minimize-maximum-component-cost](https://github.com/PhilipHsu609/LeetCode/tree/main/3613-minimize-maximum-component-cost/) | Medium |
 ## Two Pointers
