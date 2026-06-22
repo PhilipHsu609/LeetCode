@@ -58,6 +58,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3514-number-of-unique-xor-triplets-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/3514-number-of-unique-xor-triplets-ii/) | Medium |
 | [3546-equal-sum-grid-partition-i](https://github.com/PhilipHsu609/LeetCode/tree/main/3546-equal-sum-grid-partition-i/) | Medium |
 | [3584-maximum-product-of-first-and-last-elements-of-a-subsequence](https://github.com/PhilipHsu609/LeetCode/tree/main/3584-maximum-product-of-first-and-last-elements-of-a-subsequence/) | Medium |
+| [3644-maximum-k-to-sort-a-permutation](https://github.com/PhilipHsu609/LeetCode/tree/main/3644-maximum-k-to-sort-a-permutation/) | Medium |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/PhilipHsu609/LeetCode/tree/main/3653-xor-after-range-multiplication-queries-i/) | Medium |
 | [3689-maximum-total-subarray-value-i](https://github.com/PhilipHsu609/LeetCode/tree/main/3689-maximum-total-subarray-value-i/) | Medium |
 | [3691-maximum-total-subarray-value-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/3691-maximum-total-subarray-value-ii/) | Hard |
@@ -191,6 +192,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1009-complement-of-base-10-integer](https://github.com/PhilipHsu609/LeetCode/tree/main/1009-complement-of-base-10-integer/) | Easy |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/PhilipHsu609/LeetCode/tree/main/2657-find-the-prefix-common-array-of-two-arrays/) | Medium |
 | [3514-number-of-unique-xor-triplets-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/3514-number-of-unique-xor-triplets-ii/) | Medium |
+| [3644-maximum-k-to-sort-a-permutation](https://github.com/PhilipHsu609/LeetCode/tree/main/3644-maximum-k-to-sort-a-permutation/) | Medium |
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
