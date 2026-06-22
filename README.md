@@ -103,6 +103,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0796-rotate-string](https://github.com/PhilipHsu609/LeetCode/tree/main/0796-rotate-string/) | Easy |
 | [0926-flip-string-to-monotone-increasing](https://github.com/PhilipHsu609/LeetCode/tree/main/0926-flip-string-to-monotone-increasing/) | Medium |
 | [1156-swap-for-longest-repeated-character-substring](https://github.com/PhilipHsu609/LeetCode/tree/main/1156-swap-for-longest-repeated-character-substring/) | Medium |
+| [1189-maximum-number-of-balloons](https://github.com/PhilipHsu609/LeetCode/tree/main/1189-maximum-number-of-balloons/) | Easy |
 | [1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/PhilipHsu609/LeetCode/tree/main/1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/) | Medium |
 | [1545-find-kth-bit-in-nth-binary-string](https://github.com/PhilipHsu609/LeetCode/tree/main/1545-find-kth-bit-in-nth-binary-string/) | Medium |
 | [1758-minimum-changes-to-make-alternating-binary-string](https://github.com/PhilipHsu609/LeetCode/tree/main/1758-minimum-changes-to-make-alternating-binary-string/) | Easy |
@@ -163,6 +164,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1156-swap-for-longest-repeated-character-substring](https://github.com/PhilipHsu609/LeetCode/tree/main/1156-swap-for-longest-repeated-character-substring/) | Medium |
+| [1189-maximum-number-of-balloons](https://github.com/PhilipHsu609/LeetCode/tree/main/1189-maximum-number-of-balloons/) | Easy |
 | [1345-jump-game-iv](https://github.com/PhilipHsu609/LeetCode/tree/main/1345-jump-game-iv/) | Hard |
 | [1980-find-unique-binary-string](https://github.com/PhilipHsu609/LeetCode/tree/main/1980-find-unique-binary-string/) | Medium |
 | [2008-maximum-earnings-from-taxi](https://github.com/PhilipHsu609/LeetCode/tree/main/2008-maximum-earnings-from-taxi/) | Medium |
@@ -280,6 +282,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Counting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1189-maximum-number-of-balloons](https://github.com/PhilipHsu609/LeetCode/tree/main/1189-maximum-number-of-balloons/) | Easy |
 | [2833-furthest-point-from-origin](https://github.com/PhilipHsu609/LeetCode/tree/main/2833-furthest-point-from-origin/) | Easy |
 ## Breadth-First Search
 | Problem Name | Difficulty |
