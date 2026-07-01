@@ -47,6 +47,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/PhilipHsu609/LeetCode/tree/main/2657-find-the-prefix-common-array-of-two-arrays/) | Medium |
 | [2766-relocate-marbles](https://github.com/PhilipHsu609/LeetCode/tree/main/2766-relocate-marbles/) | Medium |
 | [2784-check-if-array-is-good](https://github.com/PhilipHsu609/LeetCode/tree/main/2784-check-if-array-is-good/) | Easy |
+| [2812-find-the-safest-path-in-a-grid](https://github.com/PhilipHsu609/LeetCode/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
 | [2901-longest-unequal-adjacent-groups-subsequence-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/2901-longest-unequal-adjacent-groups-subsequence-ii/) | Medium |
 | [2915-length-of-the-longest-subsequence-that-sums-to-target](https://github.com/PhilipHsu609/LeetCode/tree/main/2915-length-of-the-longest-subsequence-that-sums-to-target/) | Medium |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/PhilipHsu609/LeetCode/tree/main/2946-matrix-similarity-after-cyclic-shifts/) | Easy |
@@ -94,6 +95,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1861-rotating-the-box](https://github.com/PhilipHsu609/LeetCode/tree/main/1861-rotating-the-box/) | Medium |
 | [1886-determine-whether-matrix-can-be-obtained-by-rotation](https://github.com/PhilipHsu609/LeetCode/tree/main/1886-determine-whether-matrix-can-be-obtained-by-rotation/) | Easy |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/PhilipHsu609/LeetCode/tree/main/2033-minimum-operations-to-make-a-uni-value-grid/) | Medium |
+| [2812-find-the-safest-path-in-a-grid](https://github.com/PhilipHsu609/LeetCode/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/PhilipHsu609/LeetCode/tree/main/2946-matrix-similarity-after-cyclic-shifts/) | Easy |
 | [3070-count-submatrices-with-top-left-element-and-sum-less-than-k](https://github.com/PhilipHsu609/LeetCode/tree/main/3070-count-submatrices-with-top-left-element-and-sum-less-than-k/) | Medium |
 | [3212-count-submatrices-with-equal-frequency-of-x-and-y](https://github.com/PhilipHsu609/LeetCode/tree/main/3212-count-submatrices-with-equal-frequency-of-x-and-y/) | Medium |
@@ -249,6 +251,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/0154-find-minimum-in-rotated-sorted-array-ii/) | Hard |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/PhilipHsu609/LeetCode/tree/main/1855-maximum-distance-between-a-pair-of-values/) | Medium |
 | [2008-maximum-earnings-from-taxi](https://github.com/PhilipHsu609/LeetCode/tree/main/2008-maximum-earnings-from-taxi/) | Medium |
+| [2812-find-the-safest-path-in-a-grid](https://github.com/PhilipHsu609/LeetCode/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
 | [3488-closest-equal-element-queries](https://github.com/PhilipHsu609/LeetCode/tree/main/3488-closest-equal-element-queries/) | Medium |
 | [3613-minimize-maximum-component-cost](https://github.com/PhilipHsu609/LeetCode/tree/main/3613-minimize-maximum-component-cost/) | Medium |
 ## Two Pointers
@@ -276,6 +279,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/PhilipHsu609/LeetCode/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 | [1559-detect-cycles-in-2d-grid](https://github.com/PhilipHsu609/LeetCode/tree/main/1559-detect-cycles-in-2d-grid/) | Medium |
 | [1722-minimize-hamming-distance-after-swap-operations](https://github.com/PhilipHsu609/LeetCode/tree/main/1722-minimize-hamming-distance-after-swap-operations/) | Medium |
+| [2812-find-the-safest-path-in-a-grid](https://github.com/PhilipHsu609/LeetCode/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
 | [3613-minimize-maximum-component-cost](https://github.com/PhilipHsu609/LeetCode/tree/main/3613-minimize-maximum-component-cost/) | Medium |
 ## Trie
 | Problem Name | Difficulty |
@@ -295,6 +299,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1345-jump-game-iv](https://github.com/PhilipHsu609/LeetCode/tree/main/1345-jump-game-iv/) | Hard |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/PhilipHsu609/LeetCode/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 | [1559-detect-cycles-in-2d-grid](https://github.com/PhilipHsu609/LeetCode/tree/main/1559-detect-cycles-in-2d-grid/) | Medium |
+| [2812-find-the-safest-path-in-a-grid](https://github.com/PhilipHsu609/LeetCode/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
 ## String Matching
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -324,6 +329,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Heap (Priority Queue)
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [2812-find-the-safest-path-in-a-grid](https://github.com/PhilipHsu609/LeetCode/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
 | [3478-choose-k-elements-with-maximum-sum](https://github.com/PhilipHsu609/LeetCode/tree/main/3478-choose-k-elements-with-maximum-sum/) | Medium |
 | [3691-maximum-total-subarray-value-ii](https://github.com/PhilipHsu609/LeetCode/tree/main/3691-maximum-total-subarray-value-ii/) | Hard |
 ## Segment Tree
